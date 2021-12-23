@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as p}from"./app.bc9c431b.js";const m='{"title":"\u89C6\u9891","description":"","frontmatter":{},"relativePath":"tutorial/video.md","lastUpdated":1640232065683}',t={},o=p("",4),e=[o];function c(u,l,i,r,k,d){return a(),s("div",null,e)}var h=n(t,[["render",c]]);export{m as __pageData,h as default};
