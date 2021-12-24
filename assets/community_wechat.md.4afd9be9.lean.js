@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a as o}from"./app.860279ba.js";const g='{"title":"\u6280\u672F\u4EA4\u6D41\u7FA4","description":"","frontmatter":{},"relativePath":"community/wechat.md","lastUpdated":1640334305198}',s={},c=o("",5),r=[c];function i(p,_,l,n,h,d){return a(),e("div",null,r)}var A=t(s,[["render",i]]);export{g as __pageData,A as default};
