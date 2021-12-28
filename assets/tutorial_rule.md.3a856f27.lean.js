@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as s,a as t}from"./app.f92dd97e.js";var o="/topology-documents/img/rule.png";const g='{"title":"\u6807\u5C3A","description":"","frontmatter":{},"relativePath":"tutorial/rule.md","lastUpdated":1640687464674}',e={},p=t("",6),c=[p];function l(r,u,i,k,_,d){return s(),a("div",null,c)}var h=n(e,[["render",l]]);export{g as __pageData,h as default};
