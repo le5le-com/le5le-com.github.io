@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as t,a as s}from"./app.f92dd97e.js";var o="/topology-documents/img/magnifier.png";const g='{"title":"\u653E\u5927\u955C","description":"","frontmatter":{},"relativePath":"tutorial/magnifier.md","lastUpdated":1640746533657}',e={},p=s("",5),c=[p];function r(i,l,_,u,d,m){return t(),a("div",null,c)}var k=n(e,[["render",r]]);export{g as __pageData,k as default};
