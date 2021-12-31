@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as s,a as t}from"./app.8f626b93.js";const m='{"title":"\u62D6\u62FD","description":"","frontmatter":{},"relativePath":"tutorial/drag.md","lastUpdated":1640920626464}',p={},o=t("",8),e=[o];function c(u,l,k,r,i,g){return s(),a("div",null,e)}var v=n(p,[["render",c]]);export{m as __pageData,v as default};
