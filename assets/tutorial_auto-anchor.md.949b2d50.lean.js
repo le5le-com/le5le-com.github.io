@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as e,a as n}from"./app.c933fef3.js";const f='{"title":"\u81EA\u52A8\u951A\u70B9","description":"","frontmatter":{},"relativePath":"tutorial/auto-anchor.md","lastUpdated":1641380149259}',o={},s=n("",7),p=[s];function r(c,l,_,i,u,d){return e(),t("div",null,p)}var k=a(o,[["render",r]]);export{f as __pageData,k as default};
