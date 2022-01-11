@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as s,a as t}from"./app.4d5ae0f8.js";const h='{"title":"\u53F3\u952E\u83DC\u5355","description":"","frontmatter":{},"relativePath":"tutorial/right-menu.md","lastUpdated":1641887612477}',o={},p=t("",5),e=[p];function c(u,i,l,r,k,d){return s(),a("div",null,e)}var f=n(o,[["render",c]]);export{h as __pageData,f as default};
