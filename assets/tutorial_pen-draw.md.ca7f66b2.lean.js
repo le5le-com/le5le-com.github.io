@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as s,a as t}from"./app.4d5ae0f8.js";var p="/topology-documents/img/pen.png";const h='{"title":"\u94A2\u7B14","description":"","frontmatter":{},"relativePath":"tutorial/pen-draw.md","lastUpdated":1642560523167}',e={},o=t("",8),c=[o];function l(i,r,u,_,d,k){return s(),a("div",null,c)}var f=n(e,[["render",l]]);export{h as __pageData,f as default};
