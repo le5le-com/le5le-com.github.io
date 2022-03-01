@@ -1,1 +1,0 @@
-import{_ as t,c as d,o as r,a as e}from"./app.55b81c7b.js";const m='{"title":"\u5BF9\u6BD4\u5176\u4ED6\u4EA7\u54C1","description":"","frontmatter":{},"relativePath":"tutorial/comparison.md","lastUpdated":1646103728106}',a={},o=e("",3),c=[o];function s(h,b,n,p,l,_){return r(),d("div",null,c)}var u=t(a,[["render",s]]);export{m as __pageData,u as default};
