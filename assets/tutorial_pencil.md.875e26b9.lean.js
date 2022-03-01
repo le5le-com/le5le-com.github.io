@@ -1,1 +1,0 @@
-import{_ as n,c as a,o as t,a as s}from"./app.55b81c7b.js";var e="/topology-documents/img/pencil.png";const h='{"title":"\u94C5\u7B14","description":"","frontmatter":{},"relativePath":"tutorial/pencil.md","lastUpdated":1645783906313}',o={},p=s("",6),c=[p];function l(i,r,_,u,d,m){return t(),a("div",null,c)}var f=n(o,[["render",l]]);export{h as __pageData,f as default};
