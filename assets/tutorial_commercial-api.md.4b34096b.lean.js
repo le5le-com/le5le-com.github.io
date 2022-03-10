@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as t}from"./app.30d56312.js";const g='{"title":"API\u63A5\u53E3\u6587\u6863","description":"","frontmatter":{},"relativePath":"tutorial/commercial-api.md","lastUpdated":1646898860071}',o={},p=t("",66),e=[p];function u(c,r,l,k,i,q){return a(),s("div",null,e)}var y=n(o,[["render",u]]);export{g as __pageData,y as default};
