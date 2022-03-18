@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as t,a}from"./app.0cdaf81f.js";const m='{"title":"\u90E8\u7F72\u8BD5\u7528","description":"","frontmatter":{},"relativePath":"tutorial/commercial-trial.md","lastUpdated":1647570778842}',o={},l=a("",4),n=[l];function i(c,_,d,p,s,h){return t(),r("div",null,n)}var b=e(o,[["render",i]]);export{m as __pageData,b as default};
