@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as s,a as t}from"./app.a4aae179.js";var o="/topology-documents/img/grid.png";const g='{"title":"\u7F51\u683C","description":"","frontmatter":{},"relativePath":"tutorial/grid.md","lastUpdated":1648105223956}',p={},e=t("",6),c=[e];function l(r,i,u,k,d,m){return s(),a("div",null,c)}var h=n(p,[["render",l]]);export{g as __pageData,h as default};
