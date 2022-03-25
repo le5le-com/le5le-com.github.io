@@ -1,0 +1,1 @@
+import{_ as t,c as e,o,a as r}from"./app.d493b7ab.js";var a="/topology-documents/img/architecture.png";const m='{"title":"\u6982\u8981","description":"","frontmatter":{},"relativePath":"tutorial/architecture.md","lastUpdated":1648178748087}',p={},c=r("",7),s=[c];function n(i,_,l,d,g,h){return o(),e("div",null,s)}var b=t(p,[["render",n]]);export{m as __pageData,b as default};
