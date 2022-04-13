@@ -1,0 +1,1 @@
+import{_ as a,c as n,o as t,a as s}from"./app.d493b7ab.js";var o="/topology-documents/img/map.png";const k='{"title":"\u9E70\u773C\u5730\u56FE","description":"","frontmatter":{},"relativePath":"tutorial/map.md","lastUpdated":1649816130414}',p={},e=s("",6),c=[e];function r(l,i,_,u,d,m){return t(),n("div",null,c)}var f=a(p,[["render",r]]);export{k as __pageData,f as default};
