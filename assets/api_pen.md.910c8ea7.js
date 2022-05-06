@@ -542,7 +542,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="iconrotate" tabindex="-1">iconRotate <a class="header-anchor" href="#iconrotate" aria-hidden="true">#</a></h3><p>\u56FE\u6807\u65CB\u8F6C\u89D2\u5EA6</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -569,7 +569,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="iconsize" tabindex="-1">iconSize <a class="header-anchor" href="#iconsize" aria-hidden="true">#</a></h3><p>\u56FE\u6807\u5927\u5C0F\u3002\u9ED8\u8BA4\u81EA\u9002\u5E94 pen.width, pen.height \u4E2D\u7684\u5C0F\u503C</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -583,7 +583,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="icontop\u3001iconleft" tabindex="-1">iconTop\u3001iconLeft <a class="header-anchor" href="#icontop\u3001iconleft" aria-hidden="true">#</a></h3><p>\u56FE\u6807\u504F\u79FB\u91CF\u3002\u9ED8\u8BA4\u5C45\u4E2D</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -598,7 +598,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="iconfamily\u3001iconcolor\u3001iconalign\u3001iconweight" tabindex="-1">iconFamily\u3001iconColor\u3001iconAlign\u3001iconWeight <a class="header-anchor" href="#iconfamily\u3001iconcolor\u3001iconalign\u3001iconweight" aria-hidden="true">#</a></h3><p>\u56FE\u6807\u5B57\u4F53\u540D\u79F0\u3001\u989C\u8272\u3001\u5BF9\u9F50\u65B9\u5F0F\u3001\u52A0\u7C97\u3002<br> \u5176\u4E2D\uFF0C\u5BF9\u9F50\u65B9\u5F0F\u4E3A\uFF1A</p><ul><li>top</li><li>bottom</li><li>left</li><li>right</li><li>left-top</li><li>right-top</li><li>left-bottom</li><li>right-bottom</li><li>center</li></ul><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -613,7 +613,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="disableinput" tabindex="-1">disableInput <a class="header-anchor" href="#disableinput" aria-hidden="true">#</a></h3><p>\u53CC\u51FB\u7981\u6B62\u51FA\u73B0\u6587\u672C\u8F93\u5165\u6846</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -624,7 +624,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="disablerotate" tabindex="-1">disableRotate <a class="header-anchor" href="#disablerotate" aria-hidden="true">#</a></h3><p>\u7981\u6B62\u65CB\u8F6C\u624B\u67C4</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -634,7 +634,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="disablesize" tabindex="-1">disableSize <a class="header-anchor" href="#disablesize" aria-hidden="true">#</a></h3><p>\u7981\u6B62\u51FA\u73B0\u5927\u5C0F\u7F16\u8F91\u63A7\u5236\u70B9</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -644,7 +644,7 @@ topology<span class="token punctuation">.</span><span class="token function">add
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="disableanchor" tabindex="-1">disableAnchor <a class="header-anchor" href="#disableanchor" aria-hidden="true">#</a></h3><p>\u7981\u6B62\u51FA\u73B0\u951A\u70B9</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -655,7 +655,7 @@ topology<span class="token punctuation">.</span><span class="token function">add
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="paddingtop" tabindex="-1">paddingTop <a class="header-anchor" href="#paddingtop" aria-hidden="true">#</a></h3><p>\u8FD8\u6709 paddingBottom\u3001paddingLeft\u3001paddingRight\uFF0C\u8868\u793A padding \u8DDD\u79BB</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -666,7 +666,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="backgroundimage" tabindex="-1">backgroundImage <a class="header-anchor" href="#backgroundimage" aria-hidden="true">#</a></h3><p>\u586B\u5145\u80CC\u666F\u56FE\u7247 url\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -677,7 +677,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="strokeimage" tabindex="-1">strokeImage <a class="header-anchor" href="#strokeimage" aria-hidden="true">#</a></h3><p>\u7EBF\u6761\u586B\u5145\u56FE\u7247 url\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -688,7 +688,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="children" tabindex="-1">children <a class="header-anchor" href="#children" aria-hidden="true">#</a></h3><p>\u5B50\u753B\u7B14 id \u6570\u7EC4\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string[]</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -699,7 +699,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="anchorradius" tabindex="-1">anchorRadius <a class="header-anchor" href="#anchorradius" aria-hidden="true">#</a></h3><p>\u951A\u70B9\u5927\u5C0F\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -710,7 +710,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="anchorbackground" tabindex="-1">anchorBackground <a class="header-anchor" href="#anchorbackground" aria-hidden="true">#</a></h3><p>\u951A\u70B9\u80CC\u666F\u989C\u8272\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -750,7 +750,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="fromarrowsize\u3001toarrowsize" tabindex="-1">fromArrowSize\u3001toArrowSize <a class="header-anchor" href="#fromarrowsize\u3001toarrowsize" aria-hidden="true">#</a></h3><p>\u7BAD\u5934\u5927\u5C0F\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -762,7 +762,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="fromarrowcolor\u3001toarrowcolor" tabindex="-1">fromArrowColor\u3001toArrowColor <a class="header-anchor" href="#fromarrowcolor\u3001toarrowcolor" aria-hidden="true">#</a></h3><p>\u7BAD\u5934\u5927\u5C0F\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -780,7 +780,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 <span class="token punctuation">}</span>
 <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 </code></pre></div><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -791,7 +791,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="animatecycle" tabindex="-1">animateCycle <a class="header-anchor" href="#animatecycle" aria-hidden="true">#</a></h3><p>\u52A8\u753B\u64AD\u653E\u6B21\u6570\u3002\u9ED8\u8BA4\u65E0\u9650\u5FAA\u73AF</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -802,7 +802,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="nextanimate" tabindex="-1">nextAnimate <a class="header-anchor" href="#nextanimate" aria-hidden="true">#</a></h3><p>\u52A8\u753B\u64AD\u653E\u7ED3\u675F\u540E\uFF0C\u8981\u64AD\u653E\u7684\u4E0B\u4E00\u4E2A\u52A8\u753B\u7684 <a href="http://pen.id" target="_blank" rel="noopener noreferrer">pen.id</a> \u6216 pen.tag</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -813,7 +813,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="autoplay" tabindex="-1">autoPlay <a class="header-anchor" href="#autoplay" aria-hidden="true">#</a></h3><p>topology.open \u65F6\uFF0C\u662F\u5426\u81EA\u52A8\u64AD\u653E</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -836,7 +836,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="duration" tabindex="-1">duration <a class="header-anchor" href="#duration" aria-hidden="true">#</a></h3><p>\u52A8\u753B\u65F6\u957F\u3002\u901A\u5E38\u81EA\u52A8\u8BA1\u7B97</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><h3 id="linear" tabindex="-1">linear <a class="header-anchor" href="#linear" aria-hidden="true">#</a></h3><p>\u52A8\u753B\u64AD\u653E\u65F6\uFF0C\u6570\u5B57\u5C5E\u6027\u662F\u5426\u5300\u901F\u6E10\u53D8\u3002\u9ED8\u8BA4\u662F\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -847,7 +847,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="scale" tabindex="-1">scale <a class="header-anchor" href="#scale" aria-hidden="true">#</a></h3><p>\u52A8\u753B\u5E27\u4E2D\u7684\u7F29\u653E\u6BD4\u4F8B\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="animatespan" tabindex="-1">animateSpan <a class="header-anchor" href="#animatespan" aria-hidden="true">#</a></h3><p>\u8FDE\u7EBF\u52A8\u753B\u901F\u5EA6\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="animatecolor" tabindex="-1">animateColor <a class="header-anchor" href="#animatecolor" aria-hidden="true">#</a></h3><p>\u8FDE\u7EBF\u52A8\u753B\u989C\u8272\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="animatelinedash" tabindex="-1">animateLineDash <a class="header-anchor" href="#animatelinedash" aria-hidden="true">#</a></h3><p>\u8FDE\u7EBF\u52A8\u753B\u865A\u7EBF\u6837\u5F0F\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number[]</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="animatedotsize" tabindex="-1">animateDotSize <a class="header-anchor" href="#animatedotsize" aria-hidden="true">#</a></h3><p>\u8FDE\u7EBF\u52A8\u753B\u5706\u70B9\u5927\u5C0F</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="animatereverse" tabindex="-1">animateReverse <a class="header-anchor" href="#animatereverse" aria-hidden="true">#</a></h3><p>\u8FDE\u7EBF\u52A8\u753B\u662F\u5426\u53CD\u5411\u64AD\u653E\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="keepanimatestate" tabindex="-1">keepAnimateState <a class="header-anchor" href="#keepanimatestate" aria-hidden="true">#</a></h3><p>\u52A8\u753B\u64AD\u653E\uFF08\u6B21\u6570\uFF09\u7ED3\u675F\uFF0C\u662F\u5426\u56DE\u5230\u521D\u59CB\u72B6\u6001\uFF0C\u9ED8\u8BA4\u662F\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="lineanimatetype" tabindex="-1">lineAnimateType <a class="header-anchor" href="#lineanimatetype" aria-hidden="true">#</a></h3><p>\u8FDE\u7EBF\u52A8\u753B\u7C7B\u578B</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> number</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="frames" tabindex="-1">frames <a class="header-anchor" href="#frames" aria-hidden="true">#</a></h3><p>\u8282\u70B9\u52A8\u753B\u5E27</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> Pen[]</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/animate.html">\u52A8\u753B\u6559\u7A0B</a></p><h3 id="input" tabindex="-1">input <a class="header-anchor" href="#input" aria-hidden="true">#</a></h3><p>\u662F\u5426\u5355\u51FB\uFF0C\u5C31\u663E\u793A\u6587\u672C\u8F93\u5165\u6846</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> boolean</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -859,7 +859,7 @@ topology<span class="token punctuation">.</span><span class="token function">add
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="dropdownlist" tabindex="-1">dropdownList <a class="header-anchor" href="#dropdownlist" aria-hidden="true">#</a></h3><p>\u5355\u51FB\uFF0C\u662F\u5426\u663E\u793A\u4E0B\u62C9\u9009\u9879\u6846</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> any[]</p><ul><li><p>\u7B80\u5355\u6570\u636E\u7C7B\u578B<br> \u4F8B\u5982\uFF1A[1,2,3]\u3002\u9009\u4E2D\u9009\u9879\u540E\uFF0C\u76F4\u63A5\u8D4B\u503C pen.text = 1</p></li><li><p>\u590D\u6742\u6570\u636E\u7C7B\u578B<br> \u4F8B\u5982\uFF1A[ { text: 1, a: &#39;a&#39;, ... }, { text: 2, a: &#39;b&#39; },]\u3002\u9009\u4E2D\u9009\u9879\u540E\uFF0C\u76F4\u63A5\u8D4B\u503C pen.text = 1;pen.a = &#39;a&#39;<br> \u5FC5\u987B\u5B58\u5728 text \u4F5C\u4E3A\u663E\u793A\u6587\u672C\uFF0C\u5176\u4ED6\u53EF\u4EE5\u4E3A\u6269\u5C55\u5C5E\u6027</p></li></ul><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token comment">// \u7B80\u5355\u7C7B\u578B</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -872,7 +872,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 
 <span class="token comment">// \u590D\u6742\u7C7B\u578B</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; rectangle&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -886,7 +886,7 @@ topology<span class="token punctuation">.</span><span class="token function">ina
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="events" tabindex="-1">events <a class="header-anchor" href="#events" aria-hidden="true">#</a></h3><p>\u4EA4\u4E92\u4E8B\u4EF6\u6570\u7EC4\u3002</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> Event[]</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><p>\u53C2\u8003<a href="./../tutorial/pen.html#\u4EA4\u4E92\u4E8B\u4EF6">\u6559\u7A0B</a></p><h3 id="iframe" tabindex="-1">iframe <a class="header-anchor" href="#iframe" aria-hidden="true">#</a></h3><p>pen.name=&#39;iframe&#39;\u65F6\uFF0C\u5D4C\u5165\u7F51\u9875\u7684 url</p><p><strong>\u6570\u636E\u7C7B\u578B\uFF1A</strong> string</p><p><strong>\u793A\u4F8B\uFF1A</strong></p><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&quot; iframe&quot;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;iframe&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
