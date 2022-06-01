@@ -78,7 +78,7 @@ topology<span class="token punctuation">.</span><span class="token function">con
   <span class="token punctuation">}</span>
 <span class="token punctuation">]</span>
 </code></pre></div><h2 id="\u89E3\u6790\u81EA\u5B9A\u4E49\u6570\u636E\u683C\u5F0F" tabindex="-1">\u89E3\u6790\u81EA\u5B9A\u4E49\u6570\u636E\u683C\u5F0F <a class="header-anchor" href="#\u89E3\u6790\u81EA\u5B9A\u4E49\u6570\u636E\u683C\u5F0F" aria-hidden="true">#</a></h2><p>\u5F53\u6570\u636E\u683C\u5F0F\u4E0D\u662F\u5F15\u64CE\u53EF\u8BC6\u522B\u7684 <a href="./../api/pen.html">Pen</a> \u6570\u636E\u683C\u5F0F\uFF0C\u652F\u6301\u81EA\u5B9A\u4E49\u51FD\u6570\u89E3\u6790</p><div class="language-js"><pre><code><span class="token comment">// \u65B9\u5F0F1\uFF1A\u76F4\u63A5\u8BBE\u7F6Esocket\u56DE\u8C03\u51FD\u6570</span>
-topology<span class="token punctuation">.</span><span class="token function-variable function">socketFn</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">message</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+topology<span class="token punctuation">.</span><span class="token function-variable function">socketFn</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">message<span class="token punctuation">,</span> topic</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
   <span class="token comment">// Do sth</span>
 
   topology<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -88,7 +88,8 @@ topology<span class="token punctuation">.</span><span class="token function-vari
 <span class="token comment">// data = {...}</span>
 data<span class="token punctuation">.</span>socketCbJs <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">
   // params: e - the message
-  constole.log(e);
+  // params: topic - mqtt \u6709\uFF0Cws \u548C http \u662F\u7A7A\u4E32
+  constole.log(e, topic);
   // Do sth.
   topology.setValue(pen);
 </span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
@@ -98,7 +99,8 @@ topology<span class="token punctuation">.</span><span class="token function">ope
 <span class="token comment">// \u6216</span>
 topology<span class="token punctuation">.</span>store<span class="token punctuation">.</span>data<span class="token punctuation">.</span>socketCbJs <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">\`</span><span class="token string">
   // params: e - the message
-  constole.log(e);
+  // params: topic - mqtt \u6709\uFF0Cws \u548C http \u662F\u7A7A\u4E32
+  constole.log(e, topic);
   // Do sth.
   topology.setValue(pen);
 </span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
