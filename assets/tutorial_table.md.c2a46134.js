@@ -275,4 +275,10 @@ import{_ as n,c as s,o as a,a as t}from"./app.9826698f.js";const d='{"title":"\u
         <span class="token punctuation">}</span>
 
         topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>table<span class="token punctuation">)</span>
-</code></pre></div>`,7),e=[o];function c(l,r,k,u,i,f){return a(),s("div",null,e)}var h=n(p,[["render",c]]);export{d as __pageData,h as default};
+</code></pre></div><ul><li><strong>\u6570\u636E\u66F4\u65B0</strong></li></ul><p>1.1.16\u7248\u672C\u4EE5\u540E\uFF0C\u6211\u4EEC\u63D0\u4F9B\u4E86\u4E00\u4E2A\u89C4\u5219\u6765\u66F4\u65B0\u4E00\u4E2A\u5355\u5143\u683C\u3002\u4F7F\u7528\u65B9\u5F0F\u5982\u4E0B\uFF1A</p><div class="language-js"><pre><code>topology<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    id<span class="token operator">:</span><span class="token string">&#39;table.id&#39;</span><span class="token punctuation">,</span><span class="token comment">//\u8868\u683Cid</span>
+    row<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token comment">//\u7B2C\u51E0\u884C</span>
+    col<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token comment">//\u7B2C\u51E0\u5217</span>
+    value<span class="token operator">:</span><span class="token number">200</span> <span class="token comment">//\u65B0\u503C</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>`,10),e=[o];function c(l,r,k,u,i,f){return a(),s("div",null,e)}var h=n(p,[["render",c]]);export{d as __pageData,h as default};
