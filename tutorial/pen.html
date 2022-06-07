@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/style.fa57c02b.css">
     <link rel="modulepreload" href="/assets/chunks/AlgoliaSearchBox.2959c65f.js">
     <link rel="modulepreload" href="/assets/app.9826698f.js">
-    <link rel="modulepreload" href="/assets/tutorial_pen.md.bfd33a29.lean.js">
+    <link rel="modulepreload" href="/assets/tutorial_pen.md.4598ea02.lean.js">
     
     <meta name="twitter:title" content="画笔 | 乐吾乐">
   <meta property="og:title" content="画笔 | 乐吾乐">
@@ -21,8 +21,8 @@
 <span class="token keyword">const</span> line <span class="token operator">=</span> <span class="token punctuation">{</span>type<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">&#39;line&#39;</span><span class="token punctuation">,</span> anchors<span class="token operator">:</span><span class="token punctuation">[</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="创建" tabindex="-1">创建 <a class="header-anchor" href="#创建" aria-hidden="true">#</a></h2><p>符合画笔格式的 json 数据即画笔。例如：</p><p><strong>以下代码，均可直接在 <a href="http://topology.le5le.com" target="_blank" rel="noopener noreferrer">topology.le5le.com</a> 官网在线编辑器或 topology 实例页面的控制台执行</strong></p><div class="language-js"><pre><code><span class="token comment">// 定义一个pen，矩形</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
@@ -44,13 +44,13 @@ topology<span class="token punctuation">.</span><span class="token function">act
 topology<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="查找" tabindex="-1">查找 <a class="header-anchor" href="#查找" aria-hidden="true">#</a></h2><div class="language-js"><pre><code><span class="token comment">// 定义一个pen，矩形</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;aaa&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -58,39 +58,39 @@ topology<span class="token punctuation">.</span><span class="token function">add
 <span class="token keyword">const</span> pens1 <span class="token operator">=</span> topology<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>pen<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// 查找方式二：tag查找，返回的是数组</span>
-<span class="token keyword">const</span> pens2 <span class="token operator">=</span> topology<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">&#39;aaa&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> pens2 <span class="token operator">=</span> topology<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="更新" tabindex="-1">更新 <a class="header-anchor" href="#更新" aria-hidden="true">#</a></h2><div class="language-js"><pre><code><span class="token comment">// 定义一个pen，矩形</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;aaa&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// 查找id = pen.id的画笔，</span>
 topology<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   id<span class="token operator">:</span> pen<span class="token punctuation">.</span>id<span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;le5le&#39;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;le5le&quot;</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// 查找id = pen.id的画笔，修改id为111</span>
 topology<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   id<span class="token operator">:</span> pen<span class="token punctuation">.</span>id<span class="token punctuation">,</span>
-  newId<span class="token operator">:</span> <span class="token string">&#39;111&#39;</span><span class="token punctuation">,</span>
+  newId<span class="token operator">:</span> <span class="token string">&quot;111&quot;</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="删除" tabindex="-1">删除 <a class="header-anchor" href="#删除" aria-hidden="true">#</a></h2><div class="language-js"><pre><code><span class="token comment">// 定义一个pen，矩形</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;aaa&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -98,13 +98,13 @@ topology<span class="token punctuation">.</span><span class="token function">add
 topology<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>topology<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>pen<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="选中高亮" tabindex="-1">选中高亮 <a class="header-anchor" href="#选中高亮" aria-hidden="true">#</a></h2><div class="language-js"><pre><code><span class="token comment">// 定义一个pen，矩形</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;aaa&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -115,45 +115,58 @@ topology<span class="token punctuation">.</span><span class="token function">act
 topology<span class="token punctuation">.</span><span class="token function">inactive</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="是否选中高亮" tabindex="-1">是否选中高亮 <a class="header-anchor" href="#是否选中高亮" aria-hidden="true">#</a></h2><div class="language-js"><pre><code><span class="token comment">// 定义一个pen，矩形</span>
 <span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;aaa&#39;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  tag<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment">// 打印是否选中高亮</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>pen<span class="token punctuation">.</span>calculative<span class="token punctuation">.</span>active<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h2 id="交互事件" tabindex="-1">交互事件 <a class="header-anchor" href="#交互事件" aria-hidden="true">#</a></h2><ul><li>鼠标进入 enter</li><li>鼠标离开 leave</li><li>选中 active</li><li>取消选中 inactive</li><li>单击 click</li><li>双击 dblclick</li><li>鼠标按下 mousedown</li><li>鼠标抬起 mouseup</li><li>数据更新 valueUpdate</li></ul><p>触发 pen 的上述行为时，可配置执行的动作<br> 锁画布后(topology.store.data.locked = 1 or 2)，可触发交互事件。<br> 事件采用冒泡机制，先执行子节点，后执行父节点。<br> 事件配置参考：</p><ol><li>在 <a href="http://t.le5le.com/" target="_blank" rel="noopener noreferrer">官网</a> 拖拽一个节点，配置需要的事件。</li><li>选中节点，在控制台输入 <code>topology.store.active[0].events</code> , 如果报错，确保已经选中该节点。</li></ol><div class="language-js"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   events<span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token punctuation">{</span>
-      name<span class="token operator">:</span> <span class="token string">&#39;click&#39;</span><span class="token punctuation">,</span>
+      name<span class="token operator">:</span> <span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span>
       action<span class="token operator">:</span> EventAction<span class="token punctuation">.</span>Link<span class="token punctuation">,</span> <span class="token comment">// 执行动作</span>
-      where<span class="token operator">:</span> <span class="token punctuation">{</span>key<span class="token operator">:</span> <span class="token string">&#39;text&#39;</span><span class="token punctuation">,</span> comparison<span class="token operator">:</span><span class="token string">&#39;==&#39;</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">&#39;矩形&#39;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 触发条件</span>
-      value<span class="token operator">:</span> <span class="token string">&#39;topology.le5le.com&#39;</span><span class="token punctuation">,</span>
+      where<span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> comparison<span class="token operator">:</span> <span class="token string">&quot;==&quot;</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token string">&quot;矩形&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 触发条件</span>
+      value<span class="token operator">:</span> <span class="token string">&quot;topology.le5le.com&quot;</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre></div><div class="language-ts"><pre><code><span class="token keyword">interface</span> <span class="token class-name">Event</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>   <span class="token comment">// 事件行为，例如 &#39;click&#39;，&#39;dblclick&#39; 等 参照上面。</span>
-  action<span class="token operator">:</span> EventAction<span class="token punctuation">;</span>  <span class="token comment">// 事件动作</span>
-  where<span class="token operator">?</span><span class="token operator">:</span> Where<span class="token punctuation">;</span>  <span class="token comment">// 若无条件，必须为 undefined or null，不可为空对象</span>
-  value<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>   <span class="token comment">// 不同 action 下，该值含义不同，例如：动画相关的，即为 节点 tag; Function 类型即为 字符串函数 </span>
+</code></pre></div><div class="language-ts"><pre><code><span class="token keyword">import</span> <span class="token punctuation">{</span> IValue<span class="token punctuation">,</span> Pen <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;../pen&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 这两个类型无需关注</span>
+
+<span class="token keyword">type</span> <span class="token class-name">EventValue</span> <span class="token operator">=</span> <span class="token builtin">string</span> <span class="token operator">|</span> IValue <span class="token operator">|</span> <span class="token keyword">undefined</span> <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token comment">// 事件行为</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">EventName</span> <span class="token operator">=</span>
+  <span class="token operator">|</span> <span class="token string">&quot;enter&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;leave&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;active&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;inactive&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;click&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;mousedown&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;mouseup&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;dblclick&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;valueUpdate&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">Event</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> EventName<span class="token punctuation">;</span>
+  action<span class="token operator">:</span> EventAction<span class="token punctuation">;</span> <span class="token comment">// 事件动作</span>
+  where<span class="token operator">?</span><span class="token operator">:</span> Where<span class="token punctuation">;</span> <span class="token comment">// 若无条件，必须为 undefined or null，不可为空对象</span>
+  value<span class="token operator">?</span><span class="token operator">:</span> EventValue<span class="token punctuation">;</span> <span class="token comment">// 不同 action 下，该值含义不同，例如：动画相关的，即为 节点 tag; Function 类型即为 字符串函数</span>
   params<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-  fn<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">Function</span><span class="token punctuation">;</span>
+  fn<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">(</span>pen<span class="token operator">:</span> Pen<span class="token punctuation">,</span> params<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">// @topology/core 内置action：</span>
 <span class="token keyword">enum</span> EventAction <span class="token punctuation">{</span>
   Link<span class="token punctuation">,</span>
   SetProps<span class="token punctuation">,</span>
@@ -167,36 +180,58 @@ topology<span class="token punctuation">.</span><span class="token function">add
 
 <span class="token keyword">interface</span> <span class="token class-name">Where</span> <span class="token punctuation">{</span>
   key<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
-  comparison<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  <span class="token comment">// 比较条件： &gt;,&gt;=,&lt;,&lt;=,==,!=。例如：pen[key] == value</span>
-  value<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
-  fn<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">Function</span><span class="token punctuation">;</span>    <span class="token comment">// 条件函数，最高优先级</span>
-  fnJs<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>    <span class="token comment">// 条件函数js代码，次高优先级</span>
+  comparison<span class="token operator">?</span><span class="token operator">:</span> Comparison<span class="token punctuation">;</span>
+  value<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">unknown</span><span class="token punctuation">;</span>
+  fn<span class="token operator">?</span><span class="token operator">:</span> <span class="token punctuation">(</span>pen<span class="token operator">:</span> Pen<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span> <span class="token comment">// 条件函数，最高优先级</span>
+  fnJs<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span> <span class="token comment">// 条件函数js代码，次高优先级</span>
 <span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * 触发器中的符号
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">type</span> <span class="token class-name">Comparison</span> <span class="token operator">=</span>
+  <span class="token operator">|</span> <span class="token string">&quot;=&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;==&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;!=&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;&gt;&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;&lt;&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;&gt;=&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;&lt;=&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;[)&quot;</span> <span class="token comment">// 介于，数学中的开闭区间</span>
+  <span class="token operator">|</span> <span class="token string">&quot;![)&quot;</span> <span class="token comment">// 非介于，与上一个相反</span>
+  <span class="token comment">/**
+   * 属于，类似于 数组的 includes
+   * .. 属于范围语法，30..50 等价于 介于的 [30, 50]
+   * [1, 2, 3]  2 // true  1.5 // false
+   * [1,20,30..50,65] 1 // true 20 // true 30 // true 30.1 // true
+   */</span>
+  <span class="token operator">|</span> <span class="token string">&quot;[]&quot;</span>
+  <span class="token operator">|</span> <span class="token string">&quot;![]&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 非属于，与上一个相反</span>
 </code></pre></div><h2 id="文本" tabindex="-1">文本 <a class="header-anchor" href="#文本" aria-hidden="true">#</a></h2><p>文字是一个很复杂的场景，中英文宽度不一致；默认换行，回车换行，不换行，永远换行；超出省略等。<br> 如何可以通过一些简单的配置来达到用户通常想要的效果，以下是制定的一些规则，欢迎讨论！</p><h3 id="文本区域" tabindex="-1">文本区域 <a class="header-anchor" href="#文本区域" aria-hidden="true">#</a></h3><h4 id="worldtextrect" tabindex="-1">worldTextRect <a class="header-anchor" href="#worldtextrect" aria-hidden="true">#</a></h4><ul><li><p>影响<br> 该区域是文字的区域，它的改变会影响双击展示输入框的大小；会影响文字的换行情况，即横向超出；会影响文字行数超出的省略号，即纵向超出。</p></li><li><p>受影响<br> 该区域在 worldRect 区域的基础上，受到 padding，textLeft，textTop，textWidth，textHeight, textAlign, textBaseline 属性的影响。<br> 而 textAlign 与 textBaseline 影响该区域 worldTextRect 在 worldRect 中的位置。</p></li><li><p>查看区域 控制台设置：</p><div class="language-js"><pre><code>topology<span class="token punctuation">.</span>store<span class="token punctuation">.</span>fillWorldTextRect <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token number">Infinity</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div></li></ul><h4 id="textdrawrect" tabindex="-1">textDrawRect <a class="header-anchor" href="#textdrawrect" aria-hidden="true">#</a></h4><p>该区域是文字的实际绘制所占的区域，它的宽度为多行文本中最大的宽度，高度为 <code>行数 * lineHeight * fontSize</code>。<br> 可以通过设置 textBackground 属性来查看当前 textDrawRect 的区域大小。</p><h3 id="换行与超出省略" tabindex="-1">换行与超出省略 <a class="header-anchor" href="#换行与超出省略" aria-hidden="true">#</a></h3><p>换行中的不换行与回车换行都比较好理解，此处不赘述了。</p><p>默认换行：每个单词即认为是一组的，同一个单词是会在同一行的，一个单词指的是一个中文或一个英文单词，例如说：&#39;乐&#39; 是一个单词，’乐吾乐&#39; 是三个单词，&#39;word word&#39;是两个单词，&#39;mmmmmmmmmm&#39;是一个单词，即英文使用空格分割单词的。</p><p>永远换行：每个字母一组，只要宽度超了就换行。</p><p>超出省略在不同的换行下是不同的：</p><ol><li>不换行</li></ol><p>判断宽度是否超出，宽度超出则删除超出部分，末尾添加 ...</p><ol start="2"><li>回车换行、默认、永远换行</li></ol><p>判断高度是否超出，若行数超过最大可展示行数，最后一行添加 ...</p><h3 id="示例" tabindex="-1">示例 <a class="header-anchor" href="#示例" aria-hidden="true">#</a></h3><p>以下示例只介绍了一些场景，后续会进行更多的补充，也欢迎完善。</p><ol><li>只需要一行文本，超出的部分省略。</li></ol><div class="language-ts"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;长文本长文本长文本长文本长文本长文本&#39;</span><span class="token punctuation">,</span>
-  whiteSpace<span class="token operator">:</span> <span class="token string">&#39;nowrap&#39;</span>
-<span class="token punctuation">}</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;长文本长文本长文本长文本长文本长文本&quot;</span><span class="token punctuation">,</span>
+  whiteSpace<span class="token operator">:</span> <span class="token string">&quot;nowrap&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><ol start="2"><li>最大两行文本，永远换行，超出省略</li></ol><p>当一定是两行文本时，需要设置 textHeight ，大于两行的高度，小于三行的高度。<br><code>2 * fontSize * lineHeight &lt;= textHeight &lt;= 3 * fontSize * lineHeight</code>。<br> fontSize 默认 12 , lineHeight 默认 1.5. 即 <code>36 &lt;= textHeight &lt;= 54</code><br> 由于计算误差，尽可能的不要设置等于的值<br> 多行文本同理</p><div class="language-ts"><pre><code><span class="token keyword">const</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
-  name<span class="token operator">:</span> <span class="token string">&#39;rectangle&#39;</span><span class="token punctuation">,</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;rectangle&quot;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   y<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   width<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  text<span class="token operator">:</span> <span class="token string">&#39;长文本长文本长文本长文本长文本长文本&#39;</span><span class="token punctuation">,</span>
+  text<span class="token operator">:</span> <span class="token string">&quot;长文本长文本长文本长文本长文本长文本&quot;</span><span class="token punctuation">,</span>
   textHeight<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
-  whiteSpace<span class="token operator">:</span> <span class="token string">&#39;break-all&#39;</span>
-<span class="token punctuation">}</span>
+  whiteSpace<span class="token operator">:</span> <span class="token string">&quot;break-all&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 topology<span class="token punctuation">.</span><span class="token function">addPen</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc><div class="edit" data-v-07c132fc><div class="edit-link" data-v-07c132fc data-v-1ed99556><!----></div></div><div class="updated" data-v-07c132fc><!----></div></footer><div class="next-and-prev-link" data-v-7eddb2c4 data-v-38ede35f><div class="container" data-v-38ede35f><div class="prev" data-v-38ede35f><a class="link" href="/tutorial/topology" data-v-38ede35f><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-38ede35f><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-38ede35f>画布</span></a></div><div class="next" data-v-38ede35f><a class="link" href="/tutorial/lifecycle" data-v-38ede35f><span class="text" data-v-38ede35f>生命周期</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-next" data-v-38ede35f><path d="M19.9,12.4c0.1-0.2,0.1-0.5,0-0.8c-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l5.3,5.3H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h11.6l-5.3,5.3c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7-7C19.8,12.6,19.9,12.5,19.9,12.4z"></path></svg></a></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"about_join.md\":\"07f25073\",\"about_us.md\":\"3fcd2f09\",\"api_canvas.md\":\"7d699d6f\",\"api_core.md\":\"257c8266\",\"api_layout.md\":\"fe7f6dc4\",\"api_pen.md\":\"facd7dc0\",\"api_point.md\":\"22ebaa75\",\"api_rect.md\":\"cee7034a\",\"api_utils.md\":\"82f14c48\",\"awesome_home.md\":\"2a1d244e\",\"community_gitee.md\":\"ac8a2993\",\"community_github.md\":\"b2b28a80\",\"community_wechat.md\":\"be450f72\",\"home.md\":\"1ee34f2b\",\"index.md\":\"e131f5c4\",\"instruction_home.md\":\"2f83eb6d\",\"resources_install.md\":\"a6c5bfa4\",\"tutorial_animate.md\":\"276412e2\",\"tutorial_architecture.md\":\"02a0a182\",\"tutorial_attention.md\":\"5678cde2\",\"tutorial_auto-anchor.md\":\"eadf366b\",\"tutorial_changelog.md\":\"59eac0fe\",\"tutorial_charts.md\":\"f4f19e91\",\"tutorial_commercial-api.md\":\"a83c3fb3\",\"tutorial_commercial-trial.md\":\"fa0ad1e2\",\"tutorial_commercial.md\":\"1c06b380\",\"tutorial_data.md\":\"ea0acc44\",\"tutorial_drag.md\":\"a9bd2772\",\"tutorial_events.md\":\"214489df\",\"tutorial_faq.md\":\"41ac9174\",\"tutorial_forms.md\":\"c45284bf\",\"tutorial_grid.md\":\"81765abf\",\"tutorial_icons.md\":\"b53f861b\",\"tutorial_introduction.md\":\"806b8c52\",\"tutorial_keyboards.md\":\"c716f96a\",\"tutorial_layout.md\":\"46e40d07\",\"tutorial_lifecycle.md\":\"e6dcaada\",\"tutorial_line-ai.md\":\"9013c863\",\"tutorial_magnifier.md\":\"664ae45d\",\"tutorial_make-component.md\":\"3cb3cebc\",\"tutorial_map.md\":\"bb3135ef\",\"tutorial_pen-draw.md\":\"6d785245\",\"tutorial_pen.md\":\"bfd33a29\",\"tutorial_pencil.md\":\"a15516a3\",\"tutorial_pens.md\":\"e1e35076\",\"tutorial_progress.md\":\"c35a14e2\",\"tutorial_right-menu.md\":\"03941c46\",\"tutorial_rule.md\":\"146045af\",\"tutorial_service-data.md\":\"ee17dd6f\",\"tutorial_start.md\":\"d1d8d6a6\",\"tutorial_svg-to-combine.md\":\"b64977a4\",\"tutorial_table.md\":\"c2a46134\",\"tutorial_topology.md\":\"414db548\",\"tutorial_video.md\":\"4daeece8\",\"videos_home.md\":\"e9969fee\"}")</script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"about_join.md\":\"07f25073\",\"about_us.md\":\"3fcd2f09\",\"api_canvas.md\":\"7d699d6f\",\"api_core.md\":\"257c8266\",\"api_layout.md\":\"fe7f6dc4\",\"api_pen.md\":\"facd7dc0\",\"api_point.md\":\"22ebaa75\",\"api_rect.md\":\"cee7034a\",\"api_utils.md\":\"82f14c48\",\"awesome_home.md\":\"2a1d244e\",\"community_gitee.md\":\"ac8a2993\",\"community_github.md\":\"b2b28a80\",\"community_wechat.md\":\"be450f72\",\"home.md\":\"1ee34f2b\",\"index.md\":\"e131f5c4\",\"instruction_home.md\":\"2f83eb6d\",\"resources_install.md\":\"a6c5bfa4\",\"tutorial_animate.md\":\"276412e2\",\"tutorial_architecture.md\":\"02a0a182\",\"tutorial_attention.md\":\"5678cde2\",\"tutorial_auto-anchor.md\":\"eadf366b\",\"tutorial_changelog.md\":\"8a6ec808\",\"tutorial_charts.md\":\"f4f19e91\",\"tutorial_commercial-api.md\":\"a83c3fb3\",\"tutorial_commercial-trial.md\":\"fa0ad1e2\",\"tutorial_commercial.md\":\"1c06b380\",\"tutorial_data.md\":\"ea0acc44\",\"tutorial_drag.md\":\"a9bd2772\",\"tutorial_events.md\":\"214489df\",\"tutorial_faq.md\":\"41ac9174\",\"tutorial_forms.md\":\"c45284bf\",\"tutorial_grid.md\":\"81765abf\",\"tutorial_icons.md\":\"b53f861b\",\"tutorial_introduction.md\":\"806b8c52\",\"tutorial_keyboards.md\":\"c716f96a\",\"tutorial_layout.md\":\"46e40d07\",\"tutorial_lifecycle.md\":\"e6dcaada\",\"tutorial_line-ai.md\":\"9013c863\",\"tutorial_magnifier.md\":\"664ae45d\",\"tutorial_make-component.md\":\"3cb3cebc\",\"tutorial_map.md\":\"bb3135ef\",\"tutorial_pen-draw.md\":\"6d785245\",\"tutorial_pen.md\":\"4598ea02\",\"tutorial_pencil.md\":\"a15516a3\",\"tutorial_pens.md\":\"e1e35076\",\"tutorial_progress.md\":\"c35a14e2\",\"tutorial_right-menu.md\":\"03941c46\",\"tutorial_rule.md\":\"146045af\",\"tutorial_service-data.md\":\"ee17dd6f\",\"tutorial_start.md\":\"d1d8d6a6\",\"tutorial_svg-to-combine.md\":\"b64977a4\",\"tutorial_table.md\":\"c2a46134\",\"tutorial_topology.md\":\"414db548\",\"tutorial_video.md\":\"4daeece8\",\"videos_home.md\":\"e9969fee\"}")</script>
     <script type="module" async src="/assets/app.9826698f.js"></script>
     
   </body>
