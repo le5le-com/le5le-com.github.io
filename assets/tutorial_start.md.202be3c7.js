@@ -27,6 +27,7 @@ topology<span class="token punctuation">.</span><span class="token function">add
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><ol start="4"><li>\u7F16\u5199 index.js \u52A0\u8F7D topology.js</li></ol><div class="language-js"><pre><code><span class="token keyword">var</span> topology <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Topology</span><span class="token punctuation">(</span><span class="token string">&quot;topology&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">registerCommonDiagram</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//\u6CE8\u518C\u56FE\u5F62\u5E93</span>
 <span class="token comment">// Get the json data</span>
 <span class="token comment">// ...</span>
 <span class="token comment">// Open the json</span>
