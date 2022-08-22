@@ -98,7 +98,7 @@ import{_ as n,c as s,o as a,a as t}from"./app.9ad7f790.js";const m='{"title":"\u
 </code></pre></div><ol start="2"><li>\u66F4\u65B0\u6307\u5B9A\u884C\u6570\u636E(1.1.35\u7248\u672C\u53CA\u4EE5\u540E)</li></ol><div class="language-js"><pre><code><span class="token keyword">const</span> table <span class="token operator">=</span> <span class="token punctuation">{</span>
   name<span class="token operator">:</span> <span class="token string">&#39;table2&#39;</span><span class="token punctuation">,</span>
   x<span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span>
-  y<span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span>
+  y<span class="token operator">:</span><span class="token number">100</span><span class="token punctuation">,</span>  
   width<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
   height<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
   disableAnchor<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
