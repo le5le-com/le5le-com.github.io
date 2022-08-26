@@ -1,1 +1,0 @@
-import{_ as a,c as n,o as t,a as s}from"./app.9ad7f790.js";var e="/img/map.png";const k='{"title":"\u9E70\u773C\u5730\u56FE","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/map.md"}',p={},o=s("",6),c=[o];function r(i,l,_,u,d,m){return t(),n("div",null,c)}var f=a(p,[["render",r]]);export{k as __pageData,f as default};
