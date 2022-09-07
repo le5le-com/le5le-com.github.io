@@ -86,12 +86,11 @@ import{_ as s,c as n,o as a,a as t}from"./app.67c1dfd6.js";const m='{"title":"AP
       <span class="token property">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-03-09T22:14:47.825+08:00&quot;</span><span class="token punctuation">,</span>
       <span class="token property">&quot;deletedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0001-01-01T00:00:00Z&quot;</span><span class="token punctuation">,</span>
       <span class="token property">&quot;componentDatas&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>     <span class="token comment">// \u65B0\u7248\u672C 1.0 \u7EC4\u4EF6\u5185\u5BB9</span>
-      <span class="token property">&quot;componentData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>      <span class="token comment">// \u8001\u7248\u672C\u7EC4\u4EF6\u5185\u5BB9</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">]</span>
 <span class="token punctuation">}</span>  
 </code></pre></div><h4 id="post-api-user-topology-\u4FDD\u5B58\u56FE\u7EB8\u6216\u81EA\u5B9A\u4E49\u7EC4\u4EF6" tabindex="-1">[POST] /api/user/topology \u4FDD\u5B58\u56FE\u7EB8\u6216\u81EA\u5B9A\u4E49\u7EC4\u4EF6 <a class="header-anchor" href="#post-api-user-topology-\u4FDD\u5B58\u56FE\u7EB8\u6216\u81EA\u5B9A\u4E49\u7EC4\u4EF6" aria-hidden="true">#</a></h4><p><strong>body\uFF1A\u56FE\u7EB8json\uFF0C\u753B\u5E03data</strong></p><div class="language-json"><pre><code><span class="token comment">// \u4FDD\u5B58 \u56FE\u7EB8</span>
-<span class="token comment">// topology.pureData()\u5185\u5BB9\uFF0C1.0 \u7248\u672C topology.data()</span>
+<span class="token comment">// topology.data()</span>
 <span class="token punctuation">{</span>
   folder<span class="token operator">:</span> <span class="token string">&quot;123&quot;</span> <span class="token comment">//\u6587\u4EF6\u540D</span>
   fromArrow<span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">//\u9ED8\u8BA4\u8D77\u59CB\u7BAD\u5934,</span>
@@ -139,18 +138,12 @@ import{_ as s,c as n,o as a,a as t}from"./app.67c1dfd6.js";const m='{"title":"AP
 	socketCbJs<span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">//\u6D88\u606F\u901A\u4FE1\u56DE\u8C03\u51FD\u6570 js \u4EE3\u7801</span>
 	http<span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">//http\u8BF7\u6C42\u5730\u5740</span>
 	httpTimeInterval<span class="token operator">:</span><span class="token number">1000</span> <span class="token comment">//http\u8BF7\u6C42\u9891\u7387</span>
-  socketEvent<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">//\u8001\u7248\u672C \u662F\u5426\u76D1\u542C\u81EA\u5B9A\u4E49\u7684socket\u6D88\u606F</span>
-  bkColor<span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">//\u8001\u7248\u672C \u80CC\u666F\u989C\u8272</span>
-  bkImageRect<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//\u8001\u7248\u672C \u80CC\u666F\u56FE\u7247\u8303\u56F4</span>
-  bkImageStatic<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">//\u8001\u7248\u672C \u80CC\u666F\u662F\u5426\u8DDF\u7740\u79FB\u52A8</span>
-  componentData<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//\u8001\u7248\u672C \u5982\u679C\u4E3A \u201C\u6211\u521B\u5EFA\u7684\u201D\u7EC4\u4EF6\uFF0C\u5219\u4E3A\u590D\u5408\u7EC4\u4EF6\u5185\u5BB9</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">// \u4FDD\u5B58 \u81EA\u5B9A\u4E49\u7EC4\u4EF6</span>
 <span class="token punctuation">{</span>
   component<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">//\u56FE\u7EB8\u7C7B\u578B</span>
   componentDatas<span class="token operator">:</span> <span class="token punctuation">[</span>...<span class="token punctuation">]</span> <span class="token comment">////\u590D\u5408\u7EC4\u4EF6\u5185\u5BB9</span>
-  componentData<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>   <span class="token comment">// \u8001\u7248\u672C\u590D\u5408\u7EC4\u4EF6\u5185\u5BB9</span>
   folder<span class="token operator">:</span> <span class="token string">&quot;a-12&quot;</span> <span class="token comment">//\u6587\u4EF6\u540D</span>
   fromArrow<span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">//\u9ED8\u8BA4\u8D77\u59CB\u7BAD\u5934</span>
 	image<span class="token operator">:</span> <span class="token string">&quot;/image/topology/....&quot;</span>     <span class="token comment">// \u7F29\u7565\u56FE</span>
