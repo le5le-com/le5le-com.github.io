@@ -1,1 +1,0 @@
-import{_ as t,c as d,o as r,a as e}from"./app.72bada62.js";const f='{"title":"\u5FEB\u6377\u952E","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/keyboards.md"}',a={},l=e("",7),o=[l];function s(i,n,h,_,c,p){return r(),d("div",null,o)}var b=t(a,[["render",s]]);export{f as __pageData,b as default};

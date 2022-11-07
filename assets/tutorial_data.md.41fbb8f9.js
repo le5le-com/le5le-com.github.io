@@ -82,6 +82,10 @@ topology<span class="token punctuation">.</span><span class="token function-vari
   <span class="token comment">// Do sth</span>
 
   topology<span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span>pen<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">//1.2.15\u7248\u672C\u4EE5\u540E</span>
+  <span class="token comment">//return false; //\u8868\u793A\u4EC5\u6267\u884C\u81EA\u5B9A\u4E49\u7684\u56DE\u8C03\u51FD\u6570\u65B9\u6CD5</span>
+  <span class="token comment">//return true; //\u8868\u793A\u9664\u4E86\u6267\u884C\u81EA\u5B9A\u4E49\u7684\u56DE\u8C03\u65B9\u6CD5\u5916\uFF0C\u8FD8\u4F1A\u6267\u884C\u6838\u5FC3\u5E93\u65B9\u6CD5</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 <span class="token comment">// \u65B9\u5F0F2\uFF1Asocket\u56DE\u8C03\u51FD\u6570js\u4FDD\u5B58\u5230\u56FE\u7EB8\u6570\u636E</span>
@@ -92,6 +96,10 @@ data<span class="token punctuation">.</span>socketCbJs <span class="token operat
   constole.log(e, topic);
   // Do sth.
   topology.setValue(pen);
+  
+  //1.2.15\u7248\u672C\u4EE5\u540E
+  //return false; //\u8868\u793A\u4EC5\u6267\u884C\u81EA\u5B9A\u4E49\u7684\u56DE\u8C03\u51FD\u6570\u65B9\u6CD5
+  //return true; //\u8868\u793A\u9664\u4E86\u6267\u884C\u81EA\u5B9A\u4E49\u7684\u56DE\u8C03\u65B9\u6CD5\u5916\uFF0C\u8FD8\u4F1A\u6267\u884C\u6838\u5FC3\u5E93\u65B9\u6CD5
 </span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
 <span class="token comment">// \u81EA\u52A8\u76D1\u542C</span>
 topology<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -103,6 +111,10 @@ topology<span class="token punctuation">.</span>store<span class="token punctuat
   constole.log(e, topic);
   // Do sth.
   topology.setValue(pen);
+
+  //1.2.15\u7248\u672C\u4EE5\u540E
+  //return false; //\u8868\u793A\u4EC5\u6267\u884C\u81EA\u5B9A\u4E49\u7684\u56DE\u8C03\u51FD\u6570\u65B9\u6CD5
+  //return true; //\u8868\u793A\u9664\u4E86\u6267\u884C\u81EA\u5B9A\u4E49\u7684\u56DE\u8C03\u65B9\u6CD5\u5916\uFF0C\u8FD8\u4F1A\u6267\u884C\u6838\u5FC3\u5E93\u65B9\u6CD5
 </span><span class="token template-punctuation string">\`</span></span><span class="token punctuation">;</span>
 <span class="token comment">// \u624B\u52A8\u76D1\u542C</span>
 topology<span class="token punctuation">.</span><span class="token function">listenSocket</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
