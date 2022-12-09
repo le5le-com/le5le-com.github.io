@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as t}from"./app.edc98eaa.js";const m='{"title":"\u8FDB\u5EA6\u6761","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/progress.md"}',p={},e=t("",3),o=[e];function c(r,l,u,i,k,_){return a(),s("div",null,o)}var g=n(p,[["render",c]]);export{m as __pageData,g as default};

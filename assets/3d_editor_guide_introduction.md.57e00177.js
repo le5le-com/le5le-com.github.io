@@ -1,0 +1,1 @@
+import{_ as t,c as e,o,b as r}from"./app.edc98eaa.js";const m='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"3d/editor/guide/introduction.md"}',a={},n=r("p",null,"231",-1),s=[n];function c(i,d,_,p,l,u){return o(),e("div",null,s)}var h=t(a,[["render",c]]);export{m as __pageData,h as default};
