@@ -1,1 +1,0 @@
-import{_ as n,c as s,o as a,a as t}from"./app.6101a799.js";const _='{"title":"\u89C6\u9891","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/video.md"}',p={},o=t("",4),e=[o];function c(u,l,i,r,k,d){return a(),s("div",null,e)}var h=n(p,[["render",c]]);export{_ as __pageData,h as default};
