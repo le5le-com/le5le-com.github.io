@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as s,a as t}from"./app.6101a799.js";var p="/img/grid.png";const g='{"title":"\u7F51\u683C","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/grid.md"}',e={},o=t("",6),c=[o];function r(l,i,u,k,d,m){return s(),a("div",null,c)}var h=n(e,[["render",r]]);export{g as __pageData,h as default};

@@ -1,1 +1,0 @@
-import{_ as n,c as a,o as s,a as t}from"./app.a5083997.js";var o="/img/rule.png";const h='{"title":"\u6807\u5C3A","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/rule.md"}',e={},p=t("",6),c=[p];function l(r,u,i,k,_,m){return s(),a("div",null,c)}var g=n(e,[["render",l]]);export{h as __pageData,g as default};

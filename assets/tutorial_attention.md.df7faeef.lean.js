@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as r,a}from"./app.a5083997.js";const f='{"title":"\u6CE8\u610F\u4E8B\u9879","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/attention.md"}',n={},o=a("",2),s=[o];function i(_,c,l,p,d,h){return r(),e("div",null,s)}var g=t(n,[["render",i]]);export{f as __pageData,g as default};
