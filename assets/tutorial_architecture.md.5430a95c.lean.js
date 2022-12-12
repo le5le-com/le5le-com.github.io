@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as r,d as a}from"./app.3560739a.js";var c="/img/architecture.png";const g='{"title":"\u6982\u8981","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/architecture.md"}',o={},i=a("",7),n=[i];function s(p,_,d,l,h,m){return r(),e("div",null,n)}var f=t(o,[["render",s]]);export{g as __pageData,f as default};
