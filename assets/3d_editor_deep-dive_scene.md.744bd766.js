@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./app.c56c8f7c.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"3d/editor/deep-dive/scene.md"}',a={};function o(c,s,n,d,i,p){return r(),t("div")}var l=e(a,[["render",o]]);export{f as __pageData,l as default};
