@@ -34,7 +34,7 @@ module.exports = {
       },
       { text: 'Meta2d.js API', link: '/api/core', activeMatch: '^/api/' },
       {
-        text: 'Meta2d.js API',
+        text: 'Meta3d.js API',
         link: '/3d/meta3d/guide/introduction',
         activeMatch: '^/3d/meta3d/',
       },
