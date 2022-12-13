@@ -1,1 +1,0 @@
-import{_ as n,c as a,o as s,d as t}from"./app.713824ee.js";var p="/img/pen.png";const h='{"title":"\u94A2\u7B14","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/pen-draw.md"}',e={},o=t("",8),c=[o];function i(l,r,u,k,d,m){return s(),a("div",null,c)}var f=n(e,[["render",i]]);export{h as __pageData,f as default};
