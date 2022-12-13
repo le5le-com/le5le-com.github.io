@@ -1,0 +1,19 @@
+{
+  "name": "le5le-docs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "stylus": "^0.54.8",
+    "vitepress": "^0.22.3"
+  },
+  "scripts": {
+    "start": "vitepress dev docs --host 0.0.0.0 --port 3200",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "http-server": "^14.0.0"
+  }
+}
