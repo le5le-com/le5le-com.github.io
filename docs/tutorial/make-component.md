@@ -1,7 +1,7 @@
 # 自定义图形库
 
 ::: tip     
-【酷炫组件，自己定义】：https://mp.weixin.qq.com/s/R8uB48uzvKzJYHoTbXVGrw
+【炫酷组件，自己定义】：https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q
 :::
 
 meta2d 图形库是一种可扩展、开放性的图形库，可以根据需求任意定制开发。

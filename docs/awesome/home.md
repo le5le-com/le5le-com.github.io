@@ -12,9 +12,11 @@
 
 ## 视频教程
 
-### 用户使用教程
 
 ①  [用户教程01-用连线绘制管道效果](https://www.bilibili.com/video/BV1VM41167jR/?vd_source=28d7954182229a8fb83df5f4b07265c7)   
+
+②  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
+
 
 
 ## 官方示例
