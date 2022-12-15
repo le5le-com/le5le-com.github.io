@@ -312,6 +312,7 @@ function get3DSidebar() {
         { text: '场景', link: '/3d/editor/deep-dive/scene' },
         { text: '相机', link: '/3d/editor/deep-dive/camera' },
         { text: '灯光', link: '/3d/editor/deep-dive/light' },
+        { text: '模型', link: '/3d/editor/deep-dive/mesh' },
       ],
     },
   ];
