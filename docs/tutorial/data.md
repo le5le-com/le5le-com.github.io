@@ -275,10 +275,10 @@ meta2d.combine(pens, showChild); // 若组合成状态，showChild 必填
 }
 ```
 
-示例图纸：http://t.le5le.com/?id=620215dad84658ad4f8c07e5
+示例图纸：http://t.le5le.com/?id=620215dad84658ad4f8c07e5     
+
 示例解决方案：https://t.le5le.com/?id=6318527c288d77e4cee1a1bd    
 
-演示视频【开关的断开与闭合如何快速实现】：https://www.bilibili.com/video/BV1i44y1376U?spm_id_from=333.999.0.0
 
 ## 绑定变量
 
@@ -430,4 +430,3 @@ meta2d.addPen(pen);
 
 示例图纸：http://t.le5le.com/?id=629038410d3f8c6ce36e9955
 
-演示视频【绑定变量】：https://www.bilibili.com/video/BV1Yd4y1D7ys?spm_id_from=333.999.0.0

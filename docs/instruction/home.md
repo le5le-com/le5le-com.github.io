@@ -1,6 +1,6 @@
 # 用户使用手册
 
-开始设计： http://t.le5le.com/
+开始设计： https://t.le5le.com/
 
 
 ## 1 基本知识
@@ -280,7 +280,7 @@
 
 根据数据触发报警
 
-条件触发器案例：参考[消息事件-条件触发器](../tutorial/events#事件及触发器)
+条件触发器案例：参考[消息事件-条件触发器](../tutorial/events.html#事件及触发器)
 
 ## 4 动效
 
@@ -356,7 +356,6 @@ video标签支持MP4、WebM、Ogg 三种格式
 
 ![乐吾乐2D可视化  绑定变量](/img/bdbl.gif)  
 
-参考视频：https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0  
 
 
 ## 6 消息通信
@@ -563,17 +562,20 @@ video标签支持MP4、WebM、Ogg 三种格式
 | ---- | ------------------------------------- | -------- | ---- |
 | 1    | 特殊图元                               | js       | 10  |
 | 2    | 光伏系统                               | svg、gif | 7  |
-| 3    | 制冷站                                 | svg       | 8  |
-| 4    | 废水处理                               | svg       | 15   |
+| 3    | 制冷站                                 | svg       | 10  |
+| 4    | 废水处理                               | svg       | 34   |
 | 5    | 智慧城市                               | svg      | 27   |
 | 6    | 电信机房                               | svg、gif | 15    |
-| 7    | 其他更新中...                          | ...     | ...  |
+| 7    | 废气治理                          |svg、gif    | 12  |
+| 8    | 采暖系统                         |svg、gif    | 9  |
+| 9    | 锅炉房                         |svg、gif    | 5 |
+| 10    | 其他更新中...                        |svg、gif    | 5 |
 
 
 
-开始设计： http://t.le5le.com/   
+开始设计： https://t.le5le.com/   
 
-快捷键：http://developer.le5le.com/tutorial/keyboards.html   
+快捷键：https://developer.le5le.com/tutorial/keyboards.html   
 
 解决方案：https://2ds.le5le.com/search   
    
