@@ -6,7 +6,7 @@
 
 ### 1.1 乐吾乐2D可视化组态软件 1.0版     
 
-企业版demo：http://t.le5le.com/       
+企业版demo：https://t.le5le.com/       
 
  
 | 功能及规格       | vue /angular<br /> 源码版（前端）   | vue /angular<br /> 源码版（前后端） | 安装包版                    |
