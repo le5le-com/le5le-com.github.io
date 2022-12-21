@@ -17,7 +17,7 @@
 
 ②  [用户教程02-水位随数据动态变化](https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0)   
 
-③  [乐吾乐可视化引擎meta2d快速上手](https://www.bilibili.com/video/BV1od4y1Y7Dd/?spm_id_from=333.999.0.0)   
+③  [乐吾乐可视化引擎meta2d快速上手](https://www.bilibili.com/video/BV1od4y1Y7Dd/?spm_id_from=333.999.0.0)         
 
 ④  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
 
