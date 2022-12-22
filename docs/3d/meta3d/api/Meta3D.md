@@ -1,4 +1,5 @@
 # Meta3D
+可视化引擎。
 ## 属性
 ### rootDOM
 用户指定的容器DOM，应该是一个div元素，并且需要指定div的宽高属性。
@@ -44,7 +45,7 @@ Engine
 
 ## 方法
 ### constructor
-`constructor(container: string | HTMLDivElement)`
+`new Meta3D(container: string | HTMLDivElement): Meta3D`
 
 构造函数，创建Meta3D实例。
 
@@ -54,7 +55,7 @@ Engine
 
 **返回值**
 
-void
+[Meta3D](Meta3D.md)
 
 **示例**
 ```ts
