@@ -56,7 +56,12 @@
 | `'rightTop'` | string | 右上角 |
 | `'leftBottom'`  | string | 左下角 |
 | `'rightBottom'`  | string | 右下角 |
-
+### CameraType
+内置的相机类型
+| 可选值                | 类型   | 说明                 |
+| --------------------- | ------ | -------------------- |
+| `'arcRotate'` | string | 环绕相机 |
+| `'free'` | string | 漫游相机 |
 ## 接口 Interface
 ### Meta3DData
 项目的JSON数据。
