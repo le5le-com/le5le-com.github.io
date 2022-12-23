@@ -12,17 +12,24 @@
 
 ## 视频教程
 
+①  [乐吾乐2D可视化组态软件宣传片](https://www.bilibili.com/video/BV1Hg411b7Kp/?spm_id_from=333.999.0.0)  
 
-①  [用户教程01-用连线绘制管道效果](https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0)   
+②  [乐吾乐可视化引擎meta2d快速上手](https://www.bilibili.com/video/BV1od4y1Y7Dd/?spm_id_from=333.999.0.0)      
 
-②  [用户教程02-水位随数据动态变化](https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0)   
+③  [用户教程01-用连线绘制管道效果](https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0)   
 
-③  [用户教程03-处理多个topic](https://www.bilibili.com/video/BV1Te411c7oU/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)   
+④  [用户教程02-水位随数据动态变化](https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0)   
+
+⑤  [用户教程03-处理多个topic](https://www.bilibili.com/video/BV1Te411c7oU/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)   
+
+⑥  [用户教程04-弹框显示](https://www.bilibili.com/video/BV1fW4y1N7pH/?spm_id_from=333.999.0.0)       
 
 
-④  [乐吾乐可视化引擎meta2d快速上手](https://www.bilibili.com/video/BV1od4y1Y7Dd/?spm_id_from=333.999.0.0)         
+⑦  [用户教程05-脏数据处理](https://www.bilibili.com/video/BV1p44y1o7T5/?spm_id_from=333.999.0.0)    
 
-⑤  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
+⑧  [用户教程06-条件告警](https://www.bilibili.com/video/BV1z8411H7hA/?spm_id_from=333.999.0.0)    
+
+⑨  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
 
 
 
