@@ -421,11 +421,46 @@ sceneManager.moveCameraToTarget({ x: 0, y: 0, z: 0 });
 ```
 
 ### undo
+`undo(): void`
+
+撤销上一步的操作。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.undo();
+```
 
 ### redo
 
+`redo(): void`
+
+恢复被撤销的操作。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.redo();
+```
 
 ### addNodes
+`addNodes(data: LoadNodeData | LoadNodeData[], history?: boolean, emit?: boolean): void`
+
+在场景中
 
 ### deleteNodes
 
