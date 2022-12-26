@@ -458,11 +458,41 @@ sceneManager.redo();
 ```
 
 ### addNodes
-`addNodes(data: LoadNodeData | LoadNodeData[], history?: boolean, emit?: boolean): void`
+`addNodes(data: LoadNodeData | LoadNodeData[], options?: { history?: boolean; emit?: boolean }): void`
 
-在场景中
+在场景中生成模型或者灯光。
+
+**参数**
+- data: [LoadNodeData](definition.md#loadnodedata) | [LoadNodeData](definition.md#loadnodedata)[]  
+  需要生成的模型或者灯光的数据。如果需要一次生成多个，可以传入数组。
+- `?` options: { history?: boolean; emit?: boolean; }  
+  可选配置参数。
+  - history: boolean  
+    是否将操作添加到undoRedoManager的记录中。默认为true。
+  - emit: boolean  
+    是否发送addNodes全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 需要生成的GLB模型相关数据
+const data = {
+  url: 'http://xxx.xxx/',
+  name: 'xxx.glb'
+}
+
+sceneManager.addNodes(data);
+```
 
 ### deleteNodes
+`deleteNodes(node: string | Node | (string | Node)[], options?: { history?: boolean; emit?: boolean }): void`
+
+在场景中删除指定的模型或者灯光。
+
+
 
 ### selectNodes
 
