@@ -1,7 +1,36 @@
 # 定义
 
+## 枚举
+### TargetType
+场景中可操作的目标类型。
+| 成员             | 值                   | 说明       |
+| ---------------- | -------------------- | ---------- |
+| Scene            | `'Scene'`            | 场景       |
+| TransformNode    | `'TransformNode'`    | 转换节点   |
+| AbstractMesh     | `'AbstractMesh'`     | 抽象模型   |
+| Mesh             | `'Mesh'`             | 模型       |
+| LinesMesh        | `'LinesMesh'`        | 线形模型   |
+| PointLight       | `'PointLight'`       | 点光源     |
+| SpotLight        | `'SpotLight'`        | 聚光灯     |
+| HemisphericLight | `'HemisphericLight'` | 半球光     |
+| DirectionalLight | `'DirectionalLight'` | 定向光     |
+| ArcRotateCamera  | `'ArcRotateCamera'`  | 环绕相机   |
+| FollowCamera     | `'FollowCamera'`     | 跟随相机   |
+| FreeCamera       | `'FreeCamera'`       | 漫游相机   |
+| StandardMaterial | `'StandardMaterial'` | 标准材质   |
+| GridMaterial     | `'GridMaterial'`     | 网格材质   |
+| PBRMaterial      | `'PBRMaterial'`      | PBR材质    |
+| GradientMaterial | `'GradientMaterial'` | 渐变材质   |
+| ShaderMaterial   | `'ShaderMaterial'`   | 着色器材质 |
+| NodeMaterial     | `'NodeMaterial'`     | 节点材质   |
+| WaterMaterial    | `'WaterMaterial'`    | 水材质     |
+| Texture          | `'Texture'`          | 标准纹理   |
+| VideoTexture     | `'VideoTexture'`     | 视频纹理   |
+| CubeTexture      | `'CubeTexture'`      | 立方体纹理 |
+| MirrorTexture    | `'MirrorTexture'`    | 镜面纹理   |
+| Skeleton         | `'Skeleton'`         | 骨骼       |
+| Unknown          | `'Unknown'`          | 未定义     |
 ## 类型 Type
-
 ### GraphType
 操作器类型。
 | 可选值       | 类型   | 说明       |
@@ -50,18 +79,47 @@
 | `'afterOpen'`         | string | 项目数据解析完成     |
 ### LoadingPosition
 内置的加载角标的显示位置。
-| 可选值                | 类型   | 说明                 |
-| --------------------- | ------ | -------------------- |
-| `'leftTop'` | string | 左上角 |
-| `'rightTop'` | string | 右上角 |
+| 可选值          | 类型   | 说明   |
+| --------------- | ------ | ------ |
+| `'leftTop'`     | string | 左上角 |
+| `'rightTop'`    | string | 右上角 |
 | `'leftBottom'`  | string | 左下角 |
-| `'rightBottom'`  | string | 右下角 |
+| `'rightBottom'` | string | 右下角 |
 ### CameraType
-内置的相机类型
-| 可选值                | 类型   | 说明                 |
-| --------------------- | ------ | -------------------- |
+内置的相机类型。
+| 可选值        | 类型   | 说明     |
+| ------------- | ------ | -------- |
 | `'arcRotate'` | string | 环绕相机 |
-| `'free'` | string | 漫游相机 |
+| `'free'`      | string | 漫游相机 |
+### TargetNode
+可操作的目标类型。
+| 可选值                        | 类型             | 说明       |
+| ----------------------------- | ---------------- | ---------- |
+| `TargetType.Scene`            | Scene            | 场景       |
+| `TargetType.TransformNode`    | TransformNode    | 转换节点   |
+| `TargetType.AbstractMesh`     | AbstractMesh     | 抽象模型   |
+| `TargetType.Mesh`             | Mesh             | 模型       |
+| `TargetType.LinesMesh`        | LinesMesh        | 线形模型   |
+| `TargetType.PointLight`       | PointLight       | 点光源     |
+| `TargetType.SpotLight`        | SpotLight        | 聚光灯     |
+| `TargetType.HemisphericLight` | HemisphericLight | 半球光     |
+| `TargetType.DirectionalLight` | DirectionalLight | 定向光     |
+| `TargetType.ArcRotateCamera`  | ArcRotateCamera  | 环绕相机   |
+| `TargetType.FollowCamera`     | FollowCamera     | 跟随相机   |
+| `TargetType.FreeCamera`       | FreeCamera       | 漫游相机   |
+| `TargetType.StandardMaterial` | StandardMaterial | 标准材质   |
+| `TargetType.GridMaterial`     | GridMaterial     | 网格材质   |
+| `TargetType.PBRMaterial`      | PBRMaterial      | PBR材质    |
+| `TargetType.GradientMaterial` | GradientMaterial | 渐变材质   |
+| `TargetType.ShaderMaterial`   | ShaderMaterial   | 着色器材质 |
+| `TargetType.NodeMaterial`     | NodeMaterial     | 节点材质   |
+| `TargetType.WaterMaterial`    | WaterMaterial    | 水材质     |
+| `TargetType.Texture`          | Texture          | 标准纹理   |
+| `TargetType.VideoTexture`     | VideoTexture     | 视频纹理   |
+| `TargetType.CubeTexture`      | CubeTexture      | 立方体纹理 |
+| `TargetType.MirrorTexture`    | MirrorTexture    | 镜面纹理   |
+| `TargetType.Skeleton`         | Skeleton         | 骨骼       |
+| `TargetType.Unknown`          | Unknown          | 未定义     |
 ## 接口 Interface
 ### Meta3DData
 项目的JSON数据。

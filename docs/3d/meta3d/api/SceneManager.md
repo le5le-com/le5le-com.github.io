@@ -207,7 +207,7 @@ const sceneData = sceneManager.data();
 获取指定目标的JSON数据。
 
 **参数**
-- target: TargetNode  
+- target: [TargetNode](definition.md#targetnode)  
   目标。可以是场景、模型、灯光、相机、材质或者贴图。
 
 **返回值**
@@ -225,7 +225,7 @@ const cameraData = sceneManager.targetData(camera);
 获取指定目标的属性值。
 
 **参数**
-- target: TargetNode  
+- target: [TargetNode](definition.md#targetnode)    
   目标。可以是场景、模型、灯光、相机、材质或者贴图。
 - property: string  
   属性名。可以是嵌套属性，使用`#`分隔。
@@ -458,47 +458,369 @@ sceneManager.redo();
 ```
 
 ### addNodes
-`addNodes(data: LoadNodeData | LoadNodeData[], history?: boolean, emit?: boolean): void`
+`addNodes(data: LoadNodeData | LoadNodeData[], options?: { history?: boolean; emit?: boolean }): void`
 
-在场景中
+在场景中生成模型或者灯光。
+
+**参数**
+- data: [LoadNodeData](definition.md#loadnodedata) | [LoadNodeData](definition.md#loadnodedata)[]  
+  需要生成的模型或者灯光的数据。如果需要一次生成多个，可以传入数组。
+- `?` options: { history?: boolean; emit?: boolean; }  
+  可选配置参数。
+  - history: boolean  
+    是否将操作添加到undoRedoManager的记录中。默认为true。
+  - emit: boolean  
+    是否发送addNodes全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 需要生成的GLB模型相关数据
+const data = {
+  url: 'http://xxx.xxx/',
+  name: 'xxx.glb'
+}
+
+sceneManager.addNodes(data);
+```
 
 ### deleteNodes
+`deleteNodes(node: string | Node | (string | Node)[], options?: { history?: boolean; emit?: boolean }): void`
+
+在场景中删除指定的模型或者灯光。
+
+**参数**
+- node: string | Node | (string | Node)[]  
+  需要删除的模型或者灯光的ID或者原始对象。如果需要一次删除多个，可以传入数组。
+- `?` options: { history?: boolean; emit?: boolean; }  
+  可选配置参数。
+  - history: boolean  
+    是否将操作添加到undoRedoManager的记录中。默认为true。
+  - emit: boolean  
+    是否发送deleteNodes全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.deleteNodes(id);
+```
 
 ### selectNodes
+`selectNodes(node: string | Node | (string | Node)[], options?: { emit?: boolean }): void`
 
-### copyNodes
+选中模型或者灯光。非编辑状态下该方法无效。
+
+**参数**
+- node: string | Node | (string | Node)[]  
+  需要选中的模型或者灯光的ID或者原始对象。如果需要一次选中多个，可以传入数组。
+- `?` options: { emit?: boolean; }  
+  可选配置参数。
+  - emit: boolean  
+    是否发送selectNodes全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.selectNodes(id);
+```
+
+### copyNodes 
+`copyNodes(node: string | Node | (string | Node)[], options?: { emit?: boolean }): void`
+
+准备复制指定的模型或灯光（此函数不会生成新模型或灯光，只是存入待复制列表中）。
+
+**参数**
+- node: string | Node | (string | Node)[]  
+  需要复制的模型或者灯光的ID或者原始对象。如果需要一次复制多个，可以传入数组。
+- `?` options: { emit?: boolean; }  
+  可选配置参数。
+  - emit: boolean  
+    是否发送copyNodes全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.copyNodes(id);
+```
 
 ### pasteNodes
+`pasteNodes(offset?: boolean, options?: { history?: boolean; emit?: boolean }): void`
+
+在场景中生成待复制的模型或灯光的克隆体。
+
+**参数**
+- `?` offset: boolean  
+  生成克隆体时会与原目标的位置一致（即重叠）。如果offset为true，则克隆体的位置会在原目标的位置基础上增加一些偏移量。默认为true。
+- `?` options: { history?: boolean; emit?: boolean; }  
+  可选配置参数。
+  - history: boolean  
+    是否将操作添加到undoRedoManager的记录中。默认为true。
+  - emit: boolean  
+    是否发送addNodes全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.pasteNode();
+```
 
 ### combineNodes
+`combineNodes(nodes: (string | Node)[], options?: { history?: boolean; emit?: boolean })`
+
+将指定的多个模型或灯光组合成一个新的模型。本质是生成一个空白Mesh并把传入的元素作为它的子节点。
+
+**参数**
+- nodes: (string | Node)[]  
+  需要被组合的模型或灯光集合。
+- `?` options: { history?: boolean; emit?: boolean; }  
+  可选配置参数。
+  - history: boolean  
+    是否将操作添加到undoRedoManager的记录中。默认为true。
+  - emit: boolean  
+    是否发送setParent全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.combineNodes([ node1, node2 ]);
+```
 
 ### uncombineNodes
+`uncombineNodes(node: string | Node | (string | Node)[], options?: { history?: boolean; emit?: boolean })`
+
+将指定的模型或灯光拆解为多个模型。本质是移除模型的根节点，并且将根节点下的子节点独立成根节点。
+
+**参数**
+- node: string | Node | (string | Node)[]  
+  需要被拆解的模型或者灯光。如果需要拆解多个模型或灯光，可以传入数组。
+- `?` options: { history?: boolean; emit?: boolean; }  
+  可选配置参数。
+  - history: boolean  
+    是否将操作添加到undoRedoManager的记录中。默认为true。
+  - emit: boolean  
+    是否发送setParent全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.uncombineNodes(node);
+```
 
 ### setParent
+`setParent(children: string | Node | (string | Node)[], parent: string | Node | null, options?: { history?: boolean; emit?: boolean }): void`
+
+更改指定模型或者灯光的父元素。
+
+**参数**
+- node: string | Node | (string | Node)[]  
+  需要重新设置父元素的模型或灯光。如果需要同时修改多个模型或灯光，可以传入数组。
+- parent: string | Node | null  
+  新的父元素。
+- `?` options: { history?: boolean; emit?: boolean; }  
+  可选配置参数。
+  - history: boolean  
+    是否将操作添加到undoRedoManager的记录中。默认为true。
+  - emit: boolean  
+    是否发送setParent全局消息。默认为true。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.setParent(node, null);
+```
 
 ### hasCopiedNodes
+`hasCopiedNodes(): boolean`
+
+当前是否有准备复制的模型或者灯光。
+
+**参数**
+
+无
+
+**返回值**
+
+boolean
+
+**示例**
+```ts
+const flag = sceneManager.hasCopiedNodes();
+```
 
 ### getNodes
+`getNodes(node: string | Node | (string | Node)[]): Node[]`
+
+获取模型/灯光的原始对象集合。
+
+**参数**
+- node: string | Node | (string | Node)[]  
+  需要查询的模型/灯光的ID或者原始对象。如果需要同时查询多个模型或灯光，可以传入数组。
+
+**返回值**
+
+Node[]
+
+**示例**
+```ts
+const nodes = sceneManager.getNodes([ id1, id2 ]);
+```
 
 ### getNodeById
+`getNodeById(id: string): Node`
+
+根据模型/灯光的ID获取模型/灯光的原始对象。
+
+**参数**
+- id: string  
+  需要查询的模型/灯光的ID。
+
+**返回值**
+
+Node
+
+**示例**
+```ts
+const node = sceneManager.getNodeById(id);
+```
 
 ### getNodesByName
+`getNodesByName(name: string | string[]): Node[]`
+
+根据模型/灯光的名称获取模型/灯光的原始对象集合。
+
+**参数**
+- name: string | string[]  
+  需要查询的模型/灯光的名称。如果需要同时查询多个名称，可以传入数组。
+
+**返回值**
+
+Node[]
+
+**示例**
+```ts
+const nodes = sceneManager.getNodesByName(name);
+```
 
 ### getNodesByTag
+`getNodesByTag(tag: string | string[])`
+
+根据模型/灯光的标签获取模型/灯光的原始对象集合。
+
+**参数**
+- tag: string | string[]  
+  需要查询的模型/灯光的标签。如果需要同时查询多个标签，可以传入数组。
+
+**返回值**
+
+Node[]
+
+**示例**
+```ts
+const nodes = sceneManager.getNodesByTag(name);
+```
 
 ### getTargetById
+`getTargetById(id: string, targetType?: TargetType): TargetNode`
 
-### getAnimationGroupById
+根据目标ID获取目标的原始对象。目标包括模型、灯光、相机、材质、贴图、场景等。
 
-### getAnimationGroupsByName
+**参数**
+- id: string  
+  需要查询的目标的ID。
+- `?` targetType: [TargetType](definition.md#targettype)  
+  指定需要查询的目标类型。如果未指定则会在所有目标中查询。
+
+**返回值**
+
+[TargetNode](definition.md#targetnode)
+
+**示例**
+```ts
+const target = sceneManager.getTargetById(id);
+```
 
 ### getSelectedNodes
+`getSelectedNodes(): Nodes[]`
+
+获取被选中的模型或者灯光集合。
+
+**参数**
+
+无
+
+**返回值**
+
+Node[]
+
+**示例**
+```ts
+const selectedNodes = sceneManager.getSelectedNodes();
+```
 
 ### getCamera
+`getCamera(type?: CameraType): ArcRotateCamera | FreeCamera`
+
+获取指定类型的相机。如果未指定类型，则返回当前的相机。
+
+**参数**
+- `?` type: [CameraType](definition.md#cameratype)   
+  需要获取的相机的类型。如果未指定，则返回当前相机。
+
+**返回值**
+
+ArcRotateCamera | FreeCamera
+
+**示例**
+```ts
+const camera = sceneManager.getCamera();
+```
 
 ### getCameraType
+`getCameraType(camera?: ArcRotateCamera | FreeCamera): CameraType`
+
+获取指定相机的类型。如果未指定相机，则返回当前相机的类型。
+
+**参数**
+- `?` camera: ArcRotateCamera | FreeCamera  
+  需要获取类型的相机。如果未指定，则返回当前相机的类型。
+
+**返回值**
+
+[CameraType](definition.md#cameratype)
+
+**示例**
+```ts
+const cameraType = sceneManager.getCameraType();
+```
 
 ### getRootNode
+`getRootNode(node: string | Node): Node`
+
+获取指定模型或者灯光的根节点。
 
 ### getTreeData
 
