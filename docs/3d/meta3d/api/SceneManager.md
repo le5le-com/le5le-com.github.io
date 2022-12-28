@@ -820,62 +820,585 @@ const cameraType = sceneManager.getCameraType();
 ### getRootNode
 `getRootNode(node: string | Node): Node`
 
-获取指定模型或者灯光的根节点。
+获取指定模型或者灯光所在树型结构上的根节点。
+
+**参数**
+- node: string | Node  
+  树型结构上的任一模型或者灯光。
+
+**返回值**
+
+Node
+
+**示例**
+```ts
+const rootNode = sceneManager.getRootNode(id);
+```
 
 ### getTreeData
+`getTreeData(rootNode?: string | Node | (string | Node)[]): TreeNode[]`
+
+以指定的模型或者灯光为根节点，返回它的树型结构。如果没有指定，则返回场景内所有模型和灯光的树型结构。
+
+**参数**
+- `?` rootNode?: string | Node | (string | Node)[]   
+  需要转换成树型结构的模型或者灯光。如果不传，则将场景内所有模型和灯光转换成树形结构。
+
+**返回值**
+
+[TreeNode](definition.md#treenode)[]
+
+**示例**
+```ts
+const treeDatas = sceneManager.getTreeData();
+```
 
 ### executeTrigger
+`executeTrigger(node: TargetNode, type: TriggerType, triggerArgs?: TriggerArgs): void`
+
+触发目标绑定的指定类型的事件。
+
+会自动调用`parseCondition`解析数据中的条件，为`true`时，自动调用`executeAction`执行具体的动作。
+
+**参数**
+- node: [TargetNode](definition.md#targetnode)  
+  需要触发事件的目标。
+- type: [TriggerType](definition.md#triggertype)  
+  需要触发的事件类型。
+- `?` triggerArgs: TriggerArgs  
+  触发事件时所需的参数。不同事件类型所需参数不同。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 先给node绑定鼠标按下事件
+sceneManager.setValue({ 
+  target: node,
+  properties: {
+    events: [{
+      trigger: 'MouseDown',
+      list: [ ... ]
+    }] 
+  }
+});
+// 在合适的时候触发事件
+sceneManager.executeTrigger(node, 'MouseDown');
+```
 
 ### parseCondition
+`parseCondition(condition?: EventCondition): boolean;`
 
-### getValueBySource
+解析条件数据。
+
+**参数**
+- `?` condition: EventCondition  
+  需要解析的条件数据。如果条件数据不存在，则返回true。
+
+**返回值**
+
+boolean
+
+**示例**
+```ts
+// 条件数据
+const condition = { every: true, list: [ ... ] };
+// 判断条件是否成立
+const flag = sceneManager.parseCondition(condition);
+```
 
 ### executeAction
+`executeAction(node: TargetNode, action: ActionType, params: ActionParams)`
+
+执行指定类型的事件。
+
+**参数**
+- node: [TargetNode](definition.md#targetnode)  
+  需要执行事件的目标。
+- action: [ActionType](definition.md#actiontype)  
+  需要执行的事件类型。
+- params: [ActionParams](definition.md#actionparams)  
+  执行事件时需要的参数。不同类型的事件所需参数格式不同。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 定义要执行的动作参数
+const params = { targetType: 'id', targetId: '', list: [ animationId ] };
+// 执行动作
+sceneManager.executeAction(node, 'AnimationBegin', params);
+```
 
 ### describeAction
+`describeAction(node: TargetNode, data: Pick<EventCaseListItem<ActionType>, "action" | "params">): string`
+
+获取事件动作数据的文字描述。
+
+**参数**
+- node: [TargetNode](definition.md#targetnode)  
+  目标元素。
+- data: Pick<[EventCaseListItem](definition.md#eventcaselistitem)<[ActionType](definition.md#actiontype)>, "action" | "params">
+
+**返回值**
+
+string
+
+**示例**
+```ts
+// 动作数据
+const actionData = { action: 'AnimationBegin', params: { ... } };
+// 描述这个动作
+const desc = sceneManager.describeAction(node, actionData);
+```
 
 ### getEventTargets
+`getEventTargets(node: TargetNode, params: ParamsTarget): TargetNode[]`
+
+根据参数获取目标对象集合（主要用于获取最终要执行动作的目标）。
+
+**参数**
+- node: TargetNode  
+  被设置了事件的目标元素。
+- params: [ParamsTarget](definition.md#paramstarget)  
+  用于获取执行目标的相关参数。
+
+**返回值**
+
+[TargetNode](definition.md#targetnode)[]
+
+**示例**
+```ts
+const params = { targetType: 'name', targetNames: ['test'] };
+// 获取场景中所有名称为test的目标
+const targets = sceneManager.getEventTargets(node, params);
+```
 
 ### connectHTTP
+`connectHTTP(node: TargetNode, param: HTTPParam, callback?: (data: HTTPParam) => void): void`
+
+发送HTTP请求。
+
+**参数**
+- node: TargetNode  
+  目标对象。
+- param: [HTTPParam](definition.md#httpparam)  
+  HTTP请求的相关参数。
+- `?` callback: (data: [HTTPParam](definition.md#httpparam)) => void   
+  发送HTTP请求后立即执行该回调函数（不会等待返回响应）。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 每隔2秒向地址'/test'发送一次get请求。ID需要保证唯一
+const param = { id: '1', name: '请求1', url: '/test', method: 'get', interval: 2 };
+// 开始发送HTTP请求
+sceneManager.connectHTTP(sceneManager.scene, param, () => {
+  // 发送请求后，执行该回调函数
+});
+```
 
 ### closeHTTP
+`closeHTTP(id?: string, callback?: (data: HTTPParam) => void)`
+
+关闭HTTP请求，不会响应其返回结果。如果该HTTP请求在轮询，则会中止轮询。
+
+**参数**
+- `?` id: string  
+  需要关闭的HTTP请求的ID。如果不传则会关闭场景中所有连接的HTTP请求。
+- `?` callback: (param: [HTTPParam](definition.md#httpparam)) => void)  
+  关闭HTTP请求后执行该回调函数。每关闭一个请求就会执行一次该函数。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.closeHTTP(id, () => {
+  // 关闭请求后执行该回调函数
+});
+```
 
 ### connectMQTT
+`connectMQTT(node: TargetNode, param: MQTTParam, callback?: (data: MQTTParam) => void): void`
+
+发送MQTT请求。
+
+**参数**
+- node: TargetNode  
+  目标对象。
+- param: [MQTTParam](definition.md#mqttparam)  
+  MQTT请求的相关参数。
+- `?` callback: (data: [MQTTParam](definition.md#mqttparam)) => void   
+  发送MQTT请求后立即执行该回调函数（不会等待返回响应）。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 连接地址为'/test'的MQTT，主题名称为'topic'。ID需要保证唯一
+const param = { id: '1', name: '请求1', url: '/test', topics: 'topic' };
+// 开始发送MQTT请求
+sceneManager.connectMQTT(sceneManager.scene, param, () => {
+  // 发送请求后，执行该回调函数
+});
+```
 
 ### closeMQTT
+`closeMQTT(id?: string, callback?: (data: MQTTParam) => void)`
+
+关闭MQTT请求，不会响应其返回结果。
+
+**参数**
+- `?` id: string  
+  需要关闭的MQTT请求的ID。如果不传则会关闭场景中所有连接的MQTT请求。
+- `?` callback: (param: [MQTTParam](definition.md#mqttparam)) => void)  
+  关闭MQTT请求后执行该回调函数。每关闭一个请求就会执行一次该函数。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.closeMQTT(id, () => {
+  // 关闭请求后执行该回调函数
+});
+```
 
 ### connectWebSocket
+`connectWebSocket(node: TargetNode, param: WebSocketParam, callback?: (data: WebSocketParam) => void): void`
+
+发送WebSocket请求。
+
+**参数**
+- node: TargetNode  
+  目标对象。
+- param: [WebSocketParam](definition.md#websocketparam)  
+  WebSocket请求的相关参数。
+- `?` callback: (data: [WebSocketParam](definition.md#websocketparam)) => void   
+  发送WebSocket请求后立即执行该回调函数（不会等待返回响应）。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 连接地址为'/test'的WebSocket。ID需要保证唯一
+const param = { id: '1', name: '请求1', url: '/test' };
+// 开始发送WebSocket请求
+sceneManager.connectWebSocket(sceneManager.scene, param, () => {
+  // 发送请求后，执行该回调函数
+});
+```
 
 ### closeWebSocket
+`closeWebSocket(id?: string, callback?: (data: WebSocketParam) => void)`
 
-### doResponse
+关闭WebSocket请求，不会响应其返回结果。
+
+**参数**
+- `?` id: string  
+  需要关闭的WebSocket请求的ID。如果不传则会关闭场景中所有连接的WebSocket请求。
+- `?` callback: (param: [WebSocketParam](definition.md#websocketparam)) => void)  
+  关闭WebSocket请求后执行该回调函数。每关闭一个请求就会执行一次该函数。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.closeWebSocket(id, () => {
+  // 关闭请求后执行该回调函数
+});
+```
 
 ### beginEditRoute
+`beginEditRoute(): void`
+
+进入路径编辑状态。只在编辑状态下有效。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+// 首先要选中需要编辑路径的节点
+sceneManager.selectNodes(node);
+
+// 然后进入路径编辑状态
+sceneManager.beginEditRoute();
+```
 
 ### stopEditRoute
+`stopEditRoute(): void`
+
+退出路径编辑状态。只在编辑状态下有效。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.stopEditRoute();
+```
 
 ### isEditingRoute
+`isEditingRoute(): boolean`
+
+是否开启路径编辑状态。
+
+**参数**
+
+无
+
+**返回值**
+
+boolean
+
+**示例**
+```ts
+const flag = sceneManager.isEditingRoute();
+```
 
 ### showHighlight
+`showHighlight(node: string | Node | (string | Node)[]): void`
+
+高亮指定的模型。
+
+**参数**
+- node: string | Node | (string | Node)[]   
+  需要高亮的模型。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.showHighlight(node);
+```
 
 ### hideHighlight
+`hideHighlight(node: string | Node | (string | Node)[]): void`
+
+取消高亮指定的模型。
+
+**参数**
+- node: string | Node | (string | Node)[]   
+  需要取消高亮的模型。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.hideHighlight(node);
+```
 
 ### getNodeAndAuxiliaryMesh
+`getNodeAndAuxiliaryMesh(node: Node): { node: Node; mesh: AbstractMesh | undefined; }`
 
-### getAuxiliaryMeshByTarget
+传入任一灯光，获取它的原始对象和辅助模型对象。
 
-### getTargetByAuxiliaryMesh
+**参数**
+- node: Node  
+  目标元素，可以是原始灯光对象，也可以是辅助模型。
+
+**返回值**
+
+{
+  node: Node;                           // 原始对象
+  mesh: AbstractMesh | undefined;       // 辅助模型。如果该原始灯光对象不存在辅助模型，则为`undefined`
+}
+
+**示例**
+```ts
+// 获取灯光的原始对象及辅助模型。
+const { node, mesh } = sceneManager.getNodeAndAuxiliaryMesh(light);
+```
+
+### getAuxiliaryMeshByNode
+`getAuxiliaryMeshByNode(node: Node): AbstractMesh | undefined`
+
+获取指定灯光的辅助模型。
+
+**参数**
+- node: Node   
+  需要获取辅助模型的原始灯光对象。
+
+**返回值**
+
+AbstractMesh | undefined
+
+**示例**
+```ts
+const mesh = sceneManager.getAuxiliaryMeshByNode(light);
+```
+
+### getNodeByAuxiliaryMesh
+`getNodeByAuxiliaryMesh(mesh: AbstractMesh): Node`
+
+获取辅助模型所代表的原始灯光对象。
+
+**参数**
+- mesh: AbstractMesh   
+  需要获取原始灯光对象的辅助模型。
+
+**返回值**
+
+Node
+
+**示例**
+```ts
+const light = sceneManager.getNodeByAuxiliaryMesh(mesh);
+```
 
 ### addAuxiliaryMesh
+`addAuxiliaryMesh(node: Node): void`
+
+为灯光创建一个辅助模型，如果场景中已存在则不会重复创建。只在编辑状态下有效。
+
+**参数**
+- node: Node   
+  需要创建辅助模型的原始灯光对象。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.addAuxiliaryMesh(light);
+```
 
 ### updateAuxiliaryMesh
+`updateAuxiliaryMesh(node: Node): void`
+
+更新辅助模型，与原始对象保持一致。只在编辑状态下有效。
+
+**参数**
+- node: Node   
+  需要更新辅助模型的原始灯光对象。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.updateAuxiliaryMesh(light);
+```
 
 ### removeAuxiliaryMesh
+`removeAuxiliaryMesh(node: Node): void`
+
+移除指定原始灯光对象的辅助模型。
+
+**参数**
+- node: Node   
+  需要移除辅助模型的原始灯光对象。
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.removeAuxiliaryMesh(light);
+```
 
 ### showSystemNodes
+`showSystemNodes(): void`
+
+显示场景中的辅助元素。包括辅助地面、辅助网格、灯光的辅助模型等。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.showSystemNodes();
+```
 
 ### hideSystemNodes
+`hideSystemNodes(): void`
+
+移除场景中的辅助元素。包括辅助地面、辅助网格、灯光的辅助模型等。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.hideSystemNodes();
+```
 
 ### stopEvent
+`stopEvent(): void`
+
+停止场景中正在执行的事件。包括HTTP请求、MQTT请求、WebSocket请求。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.stopEvent();
+```
 
 ### dispose
+`dispose(): void`
+
+卸载场景，释放场景所持资源。
+
+**参数**
+
+无
+
+**返回值**
+
+void
+
+**示例**
+```ts
+sceneManager.dispose();
+```
