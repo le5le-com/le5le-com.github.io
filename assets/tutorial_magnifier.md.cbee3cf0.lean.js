@@ -1,0 +1,1 @@
+import{_ as n,c as a,o as t,a as s}from"./app.a391a7f8.js";var e="/img/magnifier.png";const h='{"title":"\u653E\u5927\u955C","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/magnifier.md"}',o={},p=s("",5),c=[p];function i(r,l,_,u,d,m){return t(),a("div",null,c)}var k=n(o,[["render",i]]);export{h as __pageData,k as default};
