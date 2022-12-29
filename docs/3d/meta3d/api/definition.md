@@ -333,8 +333,75 @@ WebSocket请求相关参数。
 
 ### AnimationClip
 自定义动画数据。
-| 属性名   | 类型   | 说明     |
-| -------- | ------ | -------- |
-| id       | string | 唯一标识 |
-| property | string | 属性名称 |
-| value    | any    | 属性值   |
+| 属性名    | 类型                                                         | 说明           |
+| --------- | ------------------------------------------------------------ | -------------- |
+| id        | string                                                       | 唯一标识       |
+| name      | string                                                       | 动画名称       |
+| keyframes | [AnimationClipKeyframe](definition.md#animationclipkeyframe) | 动画帧数据集合 |
+
+### AnimationClipKeyframe
+动画帧数据。
+| 属性名     | 类型   | 说明         |
+| ---------- | ------ | ------------ |
+| id         | string | 唯一标识     |
+| duration   | number | 过渡时间     |
+| properties | any    | 动画属性数据 |
+
+### ModelAnimation
+自带动画数据。
+| 属性名 | 类型   | 说明     |
+| ------ | ------ | -------- |
+| id     | string | 唯一标识 |
+| name   | string | 动画名称 |
+
+### CameraView
+相机机位数据。
+| 属性名   | 类型                                   | 说明                                        |
+| -------- | -------------------------------------- | ------------------------------------------- |
+| id       | string                                 | 唯一标识                                    |
+| type     | [CameraType](definition.md#cameratype) | 相机类型                                    |
+| name     | string                                 | 机位名称                                    |
+| alpha    | number                                 | 当type为arcRotate时，表示相机的水平旋转角度 |
+| beta     | number                                 | 当type为arcRotate时，表示相机的垂直旋转角度 |
+| radius   | number                                 | 当type为arcRotate时，表示相机至中心点的距离 |
+| target   | [Point3D](definition.md#point3d)       | 当type为arcRotate时，表示相机的中心点坐标   |
+| position | [Point3D](definition.md#point3d)       | 当type为free时，表示相机的位置坐标          |
+| rotation | [Point3D](definition.md#point3d)       | 当type为free时，表示相机的3D旋转角度        |
+
+### Point3D
+3D坐标。
+| 属性名 | 类型   | 说明  |
+| ------ | ------ | ----- |
+| x      | number | X坐标 |
+| y      | number | Y坐标 |
+| z      | number | Z坐标 |
+
+### ITextBlockInfo
+2D面板的文字块数据。
+| 属性名     | 类型   | 说明             |
+| ---------- | ------ | ---------------- |
+| id         | string | 唯一标识         |
+| left       | number | 到面板左侧的距离 |
+| top        | number | 到面板顶部的距离 |
+| width      | number | 文字块的宽度     |
+| height     | number | 文字块的高度     |
+| color      | number | 文字的颜色       |
+| text       | number | 文字的内容       |
+| fontSize   | number | 字体大小         |
+| fontFamily | number | 字体类型         |
+| fontWeight | number | 字体粗细         |
+| scaleX     | number | 水平缩放         |
+| scaleY     | number | 垂直缩放         |
+
+### IImageInfo
+2D面板的图片块数据。
+| 属性名 | 类型   | 说明             |
+| ------ | ------ | ---------------- |
+| id     | string | 唯一标识         |
+| left   | number | 到面板左侧的距离 |
+| top    | number | 到面板顶部的距离 |
+| width  | number | 文字块的宽度     |
+| height | number | 文字块的高度     |
+| source | string | 图片地址         |
+| scaleX | number | 水平缩放         |
+| scaleY | number | 垂直缩放         |

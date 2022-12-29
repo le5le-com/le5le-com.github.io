@@ -208,7 +208,7 @@ const sceneData = sceneManager.data();
 
 **参数**
 - target: [TargetNode](definition.md#targetnode)  
-  目标。可以是场景、模型、灯光、相机、材质或者贴图。
+  目标。可以是场景、模型、灯光、相机、材质或者纹理。
 
 **返回值**
 
@@ -226,7 +226,7 @@ const cameraData = sceneManager.targetData(camera);
 
 **参数**
 - target: [TargetNode](definition.md#targetnode)    
-  目标。可以是场景、模型、灯光、相机、材质或者贴图。
+  目标。可以是场景、模型、灯光、相机、材质或者纹理。
 - property: string  
   属性名。可以是嵌套属性，使用`#`分隔。
 - `?` babylonValue: boolean  
@@ -242,7 +242,7 @@ any
 const position = sceneManager.getValue(mesh, 'position');
 // 获取模型的材质
 const materialData = sceneManager.getValue(mesh, 'material');
-// 获取模型的材质贴图
+// 获取模型的材质纹理
 const textureData = sceneManager.getValue(mesh, 'material#diffuseTexture');
 
 // 获取模型材质的Babylonjs原生对象
@@ -746,7 +746,7 @@ const nodes = sceneManager.getNodesByTag(name);
 ### getTargetById
 `getTargetById(id: string, targetType?: TargetType): TargetNode`
 
-根据目标ID获取目标的原始对象。目标包括模型、灯光、相机、材质、贴图、场景等。
+根据目标ID获取目标的原始对象。目标包括模型、灯光、相机、材质、纹理、场景等。
 
 **参数**
 - id: string  
