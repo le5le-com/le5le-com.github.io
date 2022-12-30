@@ -328,6 +328,7 @@ function getMeta3DSidebar() {
       text: 'API',
       children: [
         { text: '定义', link: '/3d/meta3d/api/definition' },
+        { text: '属性列表', link: '/3d/meta3d/api/properties' },
         { text: 'Meta3D', link: '/3d/meta3d/api/Meta3D' },
         { text: 'SceneManager', link: '/3d/meta3d/api/SceneManager' },
         { text: 'EventManager', link: '/3d/meta3d/api/EventManager' },

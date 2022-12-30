@@ -63,7 +63,7 @@ meta2d.off('event', fn);
 | input               | pen & text   | 输入框键盘输入                   |
 | valueUpdate         | pen          | 修改属性值                       |
 | contextmenu         | e & bounding | 右键上下文菜单                   |
-
+| connectLine         | Object:line, lineAnchor, pen, anchor, | 连线连接到锚点                   |
 
 ## 事件及触发器
 
