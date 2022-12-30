@@ -29,7 +29,9 @@
 
 ⑧  [用户教程06-条件告警](https://www.bilibili.com/video/BV1z8411H7hA/?spm_id_from=333.999.0.0)    
 
-⑨  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
+⑨  [用户教程07-组合状态](https://www.bilibili.com/video/BV1RG4y127Bm/)    
+
+⑩  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
 
 
 
