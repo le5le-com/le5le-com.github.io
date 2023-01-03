@@ -1128,8 +1128,1298 @@ false
 
 ## 灯光
 
+### enabled
+是否启用。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.DirectionalLight
+- TargetType.HemisphericLight
+
+### position
+位置坐标。
+
+**类型**
+
+[Point3D](definition.md#point3d)
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.DirectionalLight
+
+### position.x
+位置坐标的X值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.DirectionalLight
+
+### position.y
+位置坐标的Y值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.DirectionalLight
+
+### position.z
+位置坐标的Z值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.DirectionalLight
+
+### direction
+方向坐标。
+
+**类型**
+
+[Point3D](definition.md#point3d)
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### direction.x
+方向坐标的X值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### direction.y
+方向坐标的Y值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### direction.z
+方向坐标的Z值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### diffuse
+漫反射色（可以理解为光线颜色）。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### specular
+高光色（可以理解为光源颜色）。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### intensity
+光照强度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### range
+光源影响的范围。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### shadowEnabled
+是否启用阴影。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.HemisphericLight
+- TargetType.DirectionalLight
+
+### `?` _useSG
+模型是否可以被拾取。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.PointLight
+- TargetType.SpotLight
+- TargetType.DirectionalLight
+
+### angle
+聚光灯的圆锥角度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.SpotLight
+
+### exponent
+光的衰减速度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.SpotLight
+
 ## 相机
 
+### position
+位置坐标。
+
+**类型**
+
+[Point3D](definition.md#point3d)
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### position.x
+位置坐标的X值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### position.y
+位置坐标的Y值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### position.z
+位置坐标的Z值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### rotation
+相机旋转。
+
+**类型**
+
+[Point3D](definition.md#point3d)
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.FreeCamera
+
+### rotation.x
+相机旋转的X值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.FreeCamera
+
+### rotation.y
+相机旋转的Y值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.FreeCamera
+
+### rotation.z
+相机旋转的Z值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.FreeCamera
+
+### target
+在环绕相机中表示相机的中心点坐标，在漫游相机中表示相机朝向的坐标。
+
+**类型**
+
+[Point3D](definition.md#point3d)
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### target.x
+在环绕相机中表示相机的中心点坐标X值，在漫游相机中表示相机朝向的坐标X值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### target.y
+在环绕相机中表示相机的中心点坐标Y值，在漫游相机中表示相机朝向的坐标Y值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### target.z
+在环绕相机中表示相机的中心点坐标Z值，在漫游相机中表示相机朝向的坐标Z值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+- TargetType.FreeCamera
+
+### limitY
+漫游相机距地面的高度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.FreeCamera
+
+### speed
+漫游相机移动的速度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.FreeCamera
+
+### panningSensibility
+环绕相机平移的速度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### alpha
+环绕相机水平旋转的角度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### beta
+环绕相机垂直旋转的角度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### upperBetaLimit
+环绕相机最大垂直旋转的角度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### lowerBetaLimit
+环绕相机最小垂直旋转的角度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### radius
+环绕相机至中心点的距离。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### upperRadiusLimit
+环绕相机至中心点的最大距离。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### lowerRadiusLimit
+环绕相机至中心点的最小距离。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
+### fov
+视场角度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.ArcRotateCamera
+
 ## 材质
+
+### diffuseColor
+漫反射色。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.StandardMaterial
+
+### emissiveColor
+自发光色。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.StandardMaterial
+- TargetType.PBRMaterial
+
+### specularColor
+高光色。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.StandardMaterial
+
+### diffuseTexture
+漫反射纹理。
+
+**类型**
+
+Texture
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.StandardMaterial
+
+### lightmapTexture
+光照纹理。
+
+**类型**
+
+Texture
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.StandardMaterial
+- TargetType.PBRMaterial
+
+### reflectionTexture
+反射纹理。
+
+**类型**
+
+CubeTexture | MirrorTexture
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.StandardMaterial
+- TargetType.PBRMaterial
+
+### useLightmapAsShadowmap
+混合光影贴图。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.StandardMaterial
+- TargetType.PBRMaterial
+
+### backFaceCulling
+剔除状态。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.StandardMaterial
+
+### useAlphaFromDiffuseTexture
+强制透贴。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.StandardMaterial
+
+### albedoColor
+漫反射色。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PBRMaterial
+
+### albedoTexture
+漫反射纹理。
+
+**类型**
+
+Texture
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.PBRMaterial
+
+### isClearCoat
+是否使用透明涂层。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.PBRMaterial
+
+### metallic
+金属光泽度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PBRMaterial
+
+### roughness
+粗糙度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PBRMaterial
+
+### useAlphaFromAlbedoTexture
+强制透贴。
+
+**类型**
+
+boolean
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PBRMaterial
+
+### emissiveIntensity
+反射强度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.PBRMaterial
+
+### topColor
+顶部起始颜色。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.GradientMaterial
+
+### topColorAlpha
+顶部起始颜色透明度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.GradientMaterial
+
+### bottomColor
+底部终止颜色。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.GradientMaterial
+
+### bottomColorAlpha
+底部终止颜色透明度。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.GradientMaterial
+
+### scale
+比例值。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.GradientMaterial
+
+### offset
+补偿度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.GradientMaterial
+
+### smoothness
+光滑度。取值范围 0 - 10 。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.GradientMaterial
+
+### windForce
+流速。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.WaterMaterial
+
+### bumpHeight
+跳跃高度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.WaterMaterial
+
+### waveHeight
+波峰高度。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.WaterMaterial
+
+### waveLength
+波长。
+
+**类型**
+
+number
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.WaterMaterial
+
+### waterColor
+水流颜色。
+
+**类型**
+
+string
+
+**可以通过事件/自定义数据/动态数据修改**
+
+true
+
+**可以设置动画**
+
+true
+
+**目标类型**
+- TargetType.WaterMaterial
+
+### renderList
+应用此材质的模型列表。
+
+**类型**
+
+string[]
+
+**可以通过事件/自定义数据/动态数据修改**
+
+false
+
+**可以设置动画**
+
+false
+
+**目标类型**
+- TargetType.WaterMaterial
 
 ## 纹理
