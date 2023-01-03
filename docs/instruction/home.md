@@ -64,6 +64,9 @@
 
 使用参考：http://developer.le5le.com/tutorial/data.html#%E7%8A%B6%E6%80%81
 
+视频参考：https://www.bilibili.com/video/BV1RG4y127Bm/?spm_id_from=333.999.0.0    
+
+
 ![乐吾乐2D可视化  状态](/img/kaiguanzhuangtai.gif)
 
 ![乐吾乐2D可视化  状态](/img/zhuangtai.gif)
@@ -252,15 +255,18 @@
 
 ![乐吾乐2D可视化  连线案例](/img/wuhanditie.png)
 
+参考视频：https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7    
+
+
 #### 2.5.3 文字
 
 ![乐吾乐2D可视化  文字外观](/img/wenziwaiguan.gif)
 
-#### 2.5.3 图片
+#### 2.5.4 图片
 
 ![乐吾乐2D可视化  图片外观](/img/tupianwaiguan.gif)
 
-#### 2.5.4 字体图标
+#### 2.5.5 字体图标
 
 ![乐吾乐2D可视化  字体图标外观](/img/aliziti.gif)
 
@@ -282,6 +288,9 @@
 
 条件触发器案例：参考[消息事件-条件触发器](../tutorial/events.html#事件及触发器)
 
+参考视频：https://www.bilibili.com/video/BV1z8411H7hA/?spm_id_from=333.999.0.0    
+
+
 ## 4 动效
 
 ### **4.1 节点动画**
@@ -298,7 +307,11 @@
 
 自定义动画示例2：特殊效果
 
-![乐吾乐2D可视化  自定义动画](/img/zidingyidonghua03.gif)
+![乐吾乐2D可视化  自定义动画](/img/zidingyidonghua03.gif)     
+
+参考视频：https://www.bilibili.com/video/BV1944y1o7u3/?spm_id_from=333.999.0.0     
+
+
 
 ### **4.2 连线动画**
 
@@ -371,6 +384,12 @@ video标签支持MP4、WebM、Ogg 三种格式
 ### **6.3 消息通信案例**
 
 [实时数据监听-消息通讯](../tutorial/data#消息通信)
+
+参考视频1：https://www.bilibili.com/video/BV1C24y1m7GY/?spm_id_from=333.999.0.0
+
+参考视频2：https://www.bilibili.com/video/BV1DW4y1K76g/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7   
+
+
 
 ## 7 常用菜单基本命令
 
