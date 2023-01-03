@@ -64,7 +64,7 @@
 
 使用参考：http://developer.le5le.com/tutorial/data.html#%E7%8A%B6%E6%80%81
 
-视频参考：https://www.bilibili.com/video/BV1RG4y127Bm/?spm_id_from=333.999.0.0    
+视频教程：[开关阀门多状态控制](https://www.bilibili.com/video/BV1RG4y127Bm/?spm_id_from=333.999.0.0)         
 
 
 ![乐吾乐2D可视化  状态](/img/kaiguanzhuangtai.gif)
@@ -245,6 +245,10 @@
 
 ![乐吾乐2D可视化  水位](/img/shuiwei.gif)  
 
+视频教程：[水位随数据动态变化](https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)   
+
+
+
 #### 2.5.2 样式
 
 设置连线的外观样式
@@ -254,8 +258,6 @@
 案例：用连线丰富的外观属性，绘制武地铁线路图demo
 
 ![乐吾乐2D可视化  连线案例](/img/wuhanditie.png)
-
-参考视频：https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7    
 
 
 #### 2.5.3 文字
@@ -288,7 +290,8 @@
 
 条件触发器案例：参考[消息事件-条件触发器](../tutorial/events.html#事件及触发器)
 
-参考视频：https://www.bilibili.com/video/BV1z8411H7hA/?spm_id_from=333.999.0.0    
+视频教程：[条件告警](https://www.bilibili.com/video/BV1z8411H7hA/?spm_id_from=333.999.0.0)     
+ 
 
 
 ## 4 动效
@@ -309,7 +312,7 @@
 
 ![乐吾乐2D可视化  自定义动画](/img/zidingyidonghua03.gif)     
 
-参考视频：https://www.bilibili.com/video/BV1944y1o7u3/?spm_id_from=333.999.0.0     
+视频教程：[自定义动画](https://www.bilibili.com/video/BV1944y1o7u3/?spm_id_from=333.999.0.0)    
 
 
 
@@ -335,7 +338,8 @@
 
 案例地址：https://t.le5le.com/?id=6357aafad44b9402de84d2ea    
 
-参考视频：https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0
+视频教程：[用连线绘制管道效果](https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)     
+
 
 ### **4.3 鼠标提示**
 
@@ -385,9 +389,10 @@ video标签支持MP4、WebM、Ogg 三种格式
 
 [实时数据监听-消息通讯](../tutorial/data#消息通信)
 
-参考视频1：https://www.bilibili.com/video/BV1C24y1m7GY/?spm_id_from=333.999.0.0
+参考视频1：[双向数据通信](https://www.bilibili.com/video/BV1C24y1m7GY/?spm_id_from=333.999.0.0)   
 
-参考视频2：https://www.bilibili.com/video/BV1DW4y1K76g/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7   
+参考视频2：[实时数据显示](https://www.bilibili.com/video/BV1DW4y1K76g/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)    
+
 
 
 
