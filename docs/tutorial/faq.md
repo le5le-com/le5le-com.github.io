@@ -143,7 +143,7 @@ pen.tags.push('1号位置-温度传感器');
 ### 场景一：与大部分画笔位置相差较远
 
 视频讲解：
-[如何处理脏数据-场景 1](https://www.bilibili.com/video/BV1NL4y1c7v7?spm_id_from=333.999.0.0)
+[脏数据处理](https://www.bilibili.com/video/BV1p44y1o7T5/?spm_id_from=333.999.0.0)
 
 确认方式：
 

@@ -12,6 +12,12 @@
 
 <br>
 
+
+[【乐吾乐2D可视化组态软件】宣传片](https://www.bilibili.com/video/BV1Hg411b7Kp/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)      
+
+<br>    
+
+
 ## 在线使用
 
 [在线使用](https://t.le5le.com/)
@@ -21,6 +27,13 @@
 [开源核心库 Meta2.js - Github](https://github.com/le5le-com/meta2d.js)
 
 [开源核心库 Meta2.js - Gitee](https://gitee.com/le5le/meta2d.js)
+
+[用户手册](https://developer.le5le.com/instruction/home.html)      
+
+[视频教程](https://developer.le5le.com/awesome/home.html#%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B)    
+
+
+
 
 <br>
 
