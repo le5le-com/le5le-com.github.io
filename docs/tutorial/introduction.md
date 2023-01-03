@@ -28,7 +28,7 @@
 
 [开源核心库 Meta2.js - Gitee](https://gitee.com/le5le/meta2d.js)
 
-[用户手册]（https://developer.le5le.com/instruction/home.html）     
+[用户手册](https://developer.le5le.com/instruction/home.html)      
 
 [视频教程](https://developer.le5le.com/awesome/home.html#%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B)    
 
