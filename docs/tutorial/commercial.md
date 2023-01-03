@@ -59,7 +59,7 @@
 | 基础图形库一套（约 80 个）   | ￥ 0 | 格式：js，免费赠送 |
 | 电力图形库一套（约 2000 个）   | ￥ 9000 | 格式：js、iconfont，永久授权 |
 | 物联网图形库一套（约 1800 个） | ￥ 9000 | 格式：js、png、gif，永久授权 |
-| 预售：2.5D科技风图形库一套（不少于300个） | ￥ 9000 | 格式：js、png、gif，永久授权 |
+| 预售：2.5D科技风图形库一套（300个） | ￥ 9000 | 格式：js、png、gif，永久授权 |
 
 
 ### 1.3 定制开发
@@ -89,7 +89,7 @@
 
 ## 3 部署试用
 （安装包版，本地或内网部署使用）
-https://developer.le5le.com/tutorial/commercial-trial.html   s
+https://developer.le5le.com/tutorial/commercial-trial.html   
 
 
 
