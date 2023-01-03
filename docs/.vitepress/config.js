@@ -327,12 +327,28 @@ function getMeta3DSidebar() {
     {
       text: 'API',
       children: [
-        { text: '定义', link: '/3d/meta3d/api/definition' },
-        { text: '属性列表', link: '/3d/meta3d/api/properties' },
         { text: 'Meta3D', link: '/3d/meta3d/api/Meta3D' },
         { text: 'SceneManager', link: '/3d/meta3d/api/SceneManager' },
         { text: 'EventManager', link: '/3d/meta3d/api/EventManager' },
       ],
+    },
+    {
+      text: '属性列表', children: [
+        { text: '通用', link: '/3d/meta3d/property/common' },
+        { text: '场景', link: '/3d/meta3d/property/scene' },
+        { text: '模型', link: '/3d/meta3d/property/mesh' },
+        { text: '灯光', link: '/3d/meta3d/property/light' },
+        { text: '相机', link: '/3d/meta3d/property/camera' },
+        { text: '材质', link: '/3d/meta3d/property/material' },
+        { text: '纹理', link: '/3d/meta3d/property/texture' },
+      ]
+    },
+    {
+      text: 'TS定义', children: [
+        { text: 'Emum', link: '/3d/meta3d/ts/enum' },
+        { text: 'Type', link: '/3d/meta3d/ts/type' },
+        { text: 'Interface', link: '/3d/meta3d/ts/interface' },
+      ]
     },
   ];
 }
