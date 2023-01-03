@@ -83,7 +83,7 @@ false
 
 **类型**
 
-[GridUnit](definition.md#gridunit)
+[GridUnit](../ts/type.md#gridunit)
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -113,7 +113,7 @@ false
 
 **类型**
 
-[CameraView](definition.md#cameraview)[]
+[CameraView](../ts/interface.md#cameraview)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 

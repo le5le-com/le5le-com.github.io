@@ -80,7 +80,7 @@ false
 
 **类型**
 
-[Point3D](definition.md#point3d)
+[Point3D](../ts/interface.md#point3d)
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -164,7 +164,7 @@ true
 
 **类型**
 
-[Point3D](definition.md#point3d)
+[Point3D](../ts/interface.md#point3d)
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -248,7 +248,7 @@ true
 
 **类型**
 
-[Point3D](definition.md#point3d)
+[Point3D](../ts/interface.md#point3d)
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -332,7 +332,7 @@ true
 
 **类型**
 
-[Point3D](definition.md#point3d)
+[Point3D](../ts/interface.md#point3d)
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -434,7 +434,7 @@ false
 
 **类型**
 
-[ModelAnimation](definition.md#modelanimation)[]
+[ModelAnimation](../ts/interface.md#modelanimation)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -452,7 +452,7 @@ false
 
 **类型**
 
-[Point3D](definition.md#point3d)[]
+[Point3D](../ts/interface.md#point3d)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -563,7 +563,7 @@ false
 
 **类型**
 
-[ITextBlockInfo](definition.md#itextblockinfo)[]
+[ITextBlockInfo](../ts/interface.md#itextblockinfo)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -581,7 +581,7 @@ false
 
 **类型**
 
-[IImageInfo](definition.md#iimageinfo)[]
+[IImageInfo](../ts/interface.md#iimageinfo)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 

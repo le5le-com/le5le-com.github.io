@@ -30,23 +30,23 @@
 
 ## TreeNode
 树型结构。
-| 属性名   | 类型                                   | 说明                     |
-| -------- | -------------------------------------- | ------------------------ |
-| id       | string                                 | 模型或者灯光的ID         |
-| name     | string                                 | 模型或者灯光的名称       |
-| type     | [TargetType](definition.md#targettype) | 模型或者灯光的类型       |
-| enabled  | boolean                                | 是否启用                 |
-| sceneId  | string                                 | 所在场景的ID             |
-| instance | Node                                   | 模型或者灯光的原始对象   |
-| parent   | [TreeNode](definition.md#treenode)     | 父节点的树型结构数据     |
-| children | [TreeNode](definition.md#treenode)[]   | 子节点的树型结构数据集合 |
+| 属性名   | 类型                                | 说明                     |
+| -------- | ----------------------------------- | ------------------------ |
+| id       | string                              | 模型或者灯光的ID         |
+| name     | string                              | 模型或者灯光的名称       |
+| type     | [TargetType](./enum.md#targettype)  | 模型或者灯光的类型       |
+| enabled  | boolean                             | 是否启用                 |
+| sceneId  | string                              | 所在场景的ID             |
+| instance | Node                                | 模型或者灯光的原始对象   |
+| parent   | [TreeNode](interface.md#treenode)   | 父节点的树型结构数据     |
+| children | [TreeNode](interface.md#treenode)[] | 子节点的树型结构数据集合 |
 
 ## EventCaseListItem
 事件动作的数据。
-| 属性名 | 类型                                                | 说明     |
-| ------ | --------------------------------------------------- | -------- |
-| action | [ActionType](definition.md#actiontype)              | 动作类型 |
-| params | Partial<[ActionParams](definition.md#actionparams)> | 动作参数 |
+| 属性名 | 类型                                               | 说明     |
+| ------ | -------------------------------------------------- | -------- |
+| action | [ActionType](./type.md#actiontype)                 | 动作类型 |
+| params | Partial<[ActionParams](interface.md#actionparams)> | 动作参数 |
 
 ## ParamsTarget
 设置动作执行目标的相关参数。
@@ -89,47 +89,47 @@ WebSocket请求相关参数。
 
 ## EventInfo
 事件数据。
-| 属性名  | 类型                                     | 说明           |
-| ------- | ---------------------------------------- | -------------- |
-| id      | string                                   | 唯一标识       |
-| trigger | [TriggerType](definition.md#triggertype) | 可触发事件类型 |
-| list    | [EventCase](definition.md#eventcase)     | 执行块数据集合 |
+| 属性名  | 类型                                 | 说明           |
+| ------- | ------------------------------------ | -------------- |
+| id      | string                               | 唯一标识       |
+| trigger | [TriggerType](./type.md#triggertype) | 可触发事件类型 |
+| list    | [EventCase](interface.md#eventcase)  | 执行块数据集合 |
 
 ## EventCase
 事件的执行块数据。
-| 属性名        | 类型                                                 | 说明             |
-| ------------- | ---------------------------------------------------- | ---------------- |
-| id            | string                                               | 唯一标识         |
-| condition     | [EventCondition](definition.md#eventcondition)       | 条件数据         |
-| triggerParams | [TriggerParams](definition.md#triggerparams)         | 触发执行块的参数 |
-| list          | [EventCaseListItem](definition.md#eventcaselistitem) | 动作数据集合     |
+| 属性名        | 类型                                                | 说明             |
+| ------------- | --------------------------------------------------- | ---------------- |
+| id            | string                                              | 唯一标识         |
+| condition     | [EventCondition](interface.md#eventcondition)       | 条件数据         |
+| triggerParams | [TriggerParams](interface.md#triggerparams)         | 触发执行块的参数 |
+| list          | [EventCaseListItem](interface.md#eventcaselistitem) | 动作数据集合     |
 
 ## EventCaseListItem
 动作数据。
-| 属性名 | 类型                                                | 说明             |
-| ------ | --------------------------------------------------- | ---------------- |
-| id     | string                                              | 唯一标识         |
-| action | [ActionType](definition.md#actiontype)              | 可执行动作类型   |
-| params | Partial<[ActionParams](definition.md#actionparams)> | 执行动作参数数据 |
+| 属性名 | 类型                                               | 说明             |
+| ------ | -------------------------------------------------- | ---------------- |
+| id     | string                                             | 唯一标识         |
+| action | [ActionType](./type.md#actiontype)                 | 可执行动作类型   |
+| params | Partial<[ActionParams](interface.md#actionparams)> | 执行动作参数数据 |
 
 ## CustomData
 自定义数据。
-| 属性名    | 类型                                                   | 说明           |
-| --------- | ------------------------------------------------------ | -------------- |
-| id        | string                                                 | 唯一标识       |
-| property  | string                                                 | 属性名         |
-| title     | string                                                 | 显示名称       |
-| value     | string                                                 | 值             |
-| valueType | [DataType](definition.md#datatype)                     | 值类型         |
-| list      | [CustomDataListItem](definition.md#customdatalistitem) | 状态值数据集合 |
+| 属性名    | 类型                                                  | 说明           |
+| --------- | ----------------------------------------------------- | -------------- |
+| id        | string                                                | 唯一标识       |
+| property  | string                                                | 属性名         |
+| title     | string                                                | 显示名称       |
+| value     | string                                                | 值             |
+| valueType | [DataType](type.md#datatype)                          | 值类型         |
+| list      | [CustomDataListItem](interface.md#customdatalistitem) | 状态值数据集合 |
 
 ## CustomDataListItem
 状态值数据。
-| 属性名 | 类型                                               | 说明         |
-| ------ | -------------------------------------------------- | ------------ |
-| id     | string                                             | 唯一标识     |
-| value  | string \| number \| boolean                        | 值           |
-| list   | [PropertyListItem](definition.md#propertylistitem) | 属性数据集合 |
+| 属性名 | 类型                                              | 说明         |
+| ------ | ------------------------------------------------- | ------------ |
+| id     | string                                            | 唯一标识     |
+| value  | string \| number \| boolean                       | 值           |
+| list   | [PropertyListItem](interface.md#propertylistitem) | 属性数据集合 |
 
 ## PropertyListItem
 属性数据集合。
@@ -141,11 +141,11 @@ WebSocket请求相关参数。
 
 ## AnimationClip
 自定义动画数据。
-| 属性名    | 类型                                                         | 说明           |
-| --------- | ------------------------------------------------------------ | -------------- |
-| id        | string                                                       | 唯一标识       |
-| name      | string                                                       | 动画名称       |
-| keyframes | [AnimationClipKeyframe](definition.md#animationclipkeyframe) | 动画帧数据集合 |
+| 属性名    | 类型                                                        | 说明           |
+| --------- | ----------------------------------------------------------- | -------------- |
+| id        | string                                                      | 唯一标识       |
+| name      | string                                                      | 动画名称       |
+| keyframes | [AnimationClipKeyframe](interface.md#animationclipkeyframe) | 动画帧数据集合 |
 
 ## AnimationClipKeyframe
 动画帧数据。
@@ -164,17 +164,17 @@ WebSocket请求相关参数。
 
 ## CameraView
 相机机位数据。
-| 属性名   | 类型                                   | 说明                                        |
-| -------- | -------------------------------------- | ------------------------------------------- |
-| id       | string                                 | 唯一标识                                    |
-| type     | [CameraType](definition.md#cameratype) | 相机类型                                    |
-| name     | string                                 | 机位名称                                    |
-| alpha    | number                                 | 当type为arcRotate时，表示相机的水平旋转角度 |
-| beta     | number                                 | 当type为arcRotate时，表示相机的垂直旋转角度 |
-| radius   | number                                 | 当type为arcRotate时，表示相机至中心点的距离 |
-| target   | [Point3D](definition.md#point3d)       | 当type为arcRotate时，表示相机的中心点坐标   |
-| position | [Point3D](definition.md#point3d)       | 当type为free时，表示相机的位置坐标          |
-| rotation | [Point3D](definition.md#point3d)       | 当type为free时，表示相机的3D旋转角度        |
+| 属性名   | 类型                             | 说明                                        |
+| -------- | -------------------------------- | ------------------------------------------- |
+| id       | string                           | 唯一标识                                    |
+| type     | [CameraType](type.md#cameratype) | 相机类型                                    |
+| name     | string                           | 机位名称                                    |
+| alpha    | number                           | 当type为arcRotate时，表示相机的水平旋转角度 |
+| beta     | number                           | 当type为arcRotate时，表示相机的垂直旋转角度 |
+| radius   | number                           | 当type为arcRotate时，表示相机至中心点的距离 |
+| target   | [Point3D](interface.md#point3d)  | 当type为arcRotate时，表示相机的中心点坐标   |
+| position | [Point3D](interface.md#point3d)  | 当type为free时，表示相机的位置坐标          |
+| rotation | [Point3D](interface.md#point3d)  | 当type为free时，表示相机的3D旋转角度        |
 
 ## Point2D
 2D坐标。

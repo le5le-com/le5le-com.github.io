@@ -194,7 +194,7 @@ sceneManager.pick(20, 20);
 
 **返回值**
 
-[SceneData](definition.md#scenedata)
+[SceneData](../ts/interface.md#scenedata)
 
 **示例**
 ```ts
@@ -207,7 +207,7 @@ const sceneData = sceneManager.data();
 获取指定目标的JSON数据。
 
 **参数**
-- target: [TargetNode](definition.md#targetnode)  
+- target: [TargetNode](../ts/type.md#targetnode)  
   目标。可以是场景、模型、灯光、相机、材质或者纹理。
 
 **返回值**
@@ -225,7 +225,7 @@ const cameraData = sceneManager.targetData(camera);
 获取指定目标的属性值。
 
 **参数**
-- target: [TargetNode](definition.md#targetnode)    
+- target: [TargetNode](../ts/type.md#targetnode)    
   目标。可以是场景、模型、灯光、相机、材质或者纹理。
 - property: string  
   属性名。可以是嵌套属性，使用`#`分隔。
@@ -255,7 +255,7 @@ const material = sceneManager.getValue(mesh, 'material', true);
 改变目标的属性值。
 
 **参数**
-- updateObj: [UpdateObj](definition.md#updateobj) | [UpdateObj](definition.md#updateobj)[]  
+- updateObj: [UpdateObj](../ts/interface.md#updateobj) | [UpdateObj](../ts/interface.md#updateobj)[]  
   包含被修改的目标及对应属性的对象。可以传数组以修改多个目标。
 - `?` options: { history?: boolean; emit?: boolean; duration?: number; easingMode?: EasingMode; onEnd?: () => void; }  
   可选配置参数。
@@ -299,7 +299,7 @@ sceneManager.setValue({
 
 **返回值**
 
-[CameraView](definition.md#cameraview)
+[CameraView](../ts/interface.md#cameraview)
 
 **示例**
 ```ts
@@ -317,7 +317,7 @@ const viewData = sceneManager.addCameraView('视角1');
 
 **返回值**
 
-[CameraView](definition.md#cameraview) | undefined
+[CameraView](../ts/interface.md#cameraview) | undefined
 
 **示例**
 ```ts
@@ -374,7 +374,7 @@ const viewDatas = sceneManager.getCameraViews();
 切换相机类型。
 
 **参数**
-- type: [CameraType](definition.md#cameratype)  
+- type: [CameraType](../ts/type.md#cameratype)  
   相机类型。
 - `?` options: { emit?: boolean; duration?: number; easingMode?: EasingMode; onEnd?: () => void; }  
   可选配置参数。
@@ -463,7 +463,7 @@ sceneManager.redo();
 在场景中生成模型或者灯光。
 
 **参数**
-- data: [LoadNodeData](definition.md#loadnodedata) | [LoadNodeData](definition.md#loadnodedata)[]  
+- data: [LoadNodeData](../ts/interface.md#loadnodedata) | [LoadNodeData](../ts/interface.md#loadnodedata)[]  
   需要生成的模型或者灯光的数据。如果需要一次生成多个，可以传入数组。
 - `?` options: { history?: boolean; emit?: boolean; }  
   可选配置参数。
@@ -751,12 +751,12 @@ const nodes = sceneManager.getNodesByTag(name);
 **参数**
 - id: string  
   需要查询的目标的ID。
-- `?` targetType: [TargetType](definition.md#targettype)  
+- `?` targetType: [TargetType](../ts/enum.md#targettype)  
   指定需要查询的目标类型。如果未指定则会在所有目标中查询。
 
 **返回值**
 
-[TargetNode](definition.md#targetnode)
+[TargetNode](../ts/type.md#targetnode)
 
 **示例**
 ```ts
@@ -787,7 +787,7 @@ const selectedNodes = sceneManager.getSelectedNodes();
 获取指定类型的相机。如果未指定类型，则返回当前的相机。
 
 **参数**
-- `?` type: [CameraType](definition.md#cameratype)   
+- `?` type: [CameraType](../ts/type.md#cameratype)   
   需要获取的相机的类型。如果未指定，则返回当前相机。
 
 **返回值**
@@ -810,7 +810,7 @@ const camera = sceneManager.getCamera();
 
 **返回值**
 
-[CameraType](definition.md#cameratype)
+[CameraType](../ts/type.md#cameratype)
 
 **示例**
 ```ts
@@ -846,7 +846,7 @@ const rootNode = sceneManager.getRootNode(id);
 
 **返回值**
 
-[TreeNode](definition.md#treenode)[]
+[TreeNode](../ts/interface.md#treenode)[]
 
 **示例**
 ```ts
@@ -861,9 +861,9 @@ const treeDatas = sceneManager.getTreeData();
 会自动调用`parseCondition`解析数据中的条件，为`true`时，自动调用`executeAction`执行具体的动作。
 
 **参数**
-- node: [TargetNode](definition.md#targetnode)  
+- node: [TargetNode](../ts/type.md#targetnode)  
   需要触发事件的目标。
-- type: [TriggerType](definition.md#triggertype)  
+- type: [TriggerType](../ts/type.md#triggertype)  
   需要触发的事件类型。
 - `?` triggerArgs: TriggerArgs  
   触发事件时所需的参数。不同事件类型所需参数不同。
@@ -915,11 +915,11 @@ const flag = sceneManager.parseCondition(condition);
 执行指定类型的事件。
 
 **参数**
-- node: [TargetNode](definition.md#targetnode)  
+- node: [TargetNode](../ts/type.md#targetnode)  
   需要执行事件的目标。
-- action: [ActionType](definition.md#actiontype)  
+- action: [ActionType](../ts/type.md#actiontype)  
   需要执行的事件类型。
-- params: [ActionParams](definition.md#actionparams)  
+- params: [ActionParams](../ts/type.md#actionparams)  
   执行事件时需要的参数。不同类型的事件所需参数格式不同。
 
 **返回值**
@@ -940,9 +940,9 @@ sceneManager.executeAction(node, 'AnimationBegin', params);
 获取事件动作数据的文字描述。
 
 **参数**
-- node: [TargetNode](definition.md#targetnode)  
+- node: [TargetNode](../ts/type.md#targetnode)  
   目标元素。
-- data: Pick<[EventCaseListItem](definition.md#eventcaselistitem)<[ActionType](definition.md#actiontype)>, "action" | "params">
+- data: Pick<[EventCaseListItem](../ts/interface.md#eventcaselistitem)<[ActionType](../ts/type.md#actiontype)>, "action" | "params">
 
 **返回值**
 
@@ -964,12 +964,12 @@ const desc = sceneManager.describeAction(node, actionData);
 **参数**
 - node: TargetNode  
   被设置了事件的目标元素。
-- params: [ParamsTarget](definition.md#paramstarget)  
+- params: [ParamsTarget](../ts/interface.md#paramstarget)  
   用于获取执行目标的相关参数。
 
 **返回值**
 
-[TargetNode](definition.md#targetnode)[]
+[TargetNode](../ts/type.md#targetnode)[]
 
 **示例**
 ```ts
@@ -986,9 +986,9 @@ const targets = sceneManager.getEventTargets(node, params);
 **参数**
 - node: TargetNode  
   目标对象。
-- param: [HTTPParam](definition.md#httpparam)  
+- param: [HTTPParam](../ts/interface.md#httpparam)  
   HTTP请求的相关参数。
-- `?` callback: (data: [HTTPParam](definition.md#httpparam)) => void   
+- `?` callback: (data: [HTTPParam](../ts/interface.md#httpparam)) => void   
   发送HTTP请求后立即执行该回调函数（不会等待返回响应）。
 
 **返回值**
@@ -1013,7 +1013,7 @@ sceneManager.connectHTTP(sceneManager.scene, param, () => {
 **参数**
 - `?` id: string  
   需要关闭的HTTP请求的ID。如果不传则会关闭场景中所有连接的HTTP请求。
-- `?` callback: (param: [HTTPParam](definition.md#httpparam)) => void)  
+- `?` callback: (param: [HTTPParam](../ts/interface.md#httpparam)) => void)  
   关闭HTTP请求后执行该回调函数。每关闭一个请求就会执行一次该函数。
 
 **返回值**
@@ -1035,9 +1035,9 @@ sceneManager.closeHTTP(id, () => {
 **参数**
 - node: TargetNode  
   目标对象。
-- param: [MQTTParam](definition.md#mqttparam)  
+- param: [MQTTParam](../ts/interface.md#mqttparam)  
   MQTT请求的相关参数。
-- `?` callback: (data: [MQTTParam](definition.md#mqttparam)) => void   
+- `?` callback: (data: [MQTTParam](../ts/interface.md#mqttparam)) => void   
   发送MQTT请求后立即执行该回调函数（不会等待返回响应）。
 
 **返回值**
@@ -1062,7 +1062,7 @@ sceneManager.connectMQTT(sceneManager.scene, param, () => {
 **参数**
 - `?` id: string  
   需要关闭的MQTT请求的ID。如果不传则会关闭场景中所有连接的MQTT请求。
-- `?` callback: (param: [MQTTParam](definition.md#mqttparam)) => void)  
+- `?` callback: (param: [MQTTParam](../ts/interface.md#mqttparam)) => void)  
   关闭MQTT请求后执行该回调函数。每关闭一个请求就会执行一次该函数。
 
 **返回值**
@@ -1084,9 +1084,9 @@ sceneManager.closeMQTT(id, () => {
 **参数**
 - node: TargetNode  
   目标对象。
-- param: [WebSocketParam](definition.md#websocketparam)  
+- param: [WebSocketParam](../ts/interface.md#websocketparam)  
   WebSocket请求的相关参数。
-- `?` callback: (data: [WebSocketParam](definition.md#websocketparam)) => void   
+- `?` callback: (data: [WebSocketParam](../ts/interface.md#websocketparam)) => void   
   发送WebSocket请求后立即执行该回调函数（不会等待返回响应）。
 
 **返回值**
@@ -1111,7 +1111,7 @@ sceneManager.connectWebSocket(sceneManager.scene, param, () => {
 **参数**
 - `?` id: string  
   需要关闭的WebSocket请求的ID。如果不传则会关闭场景中所有连接的WebSocket请求。
-- `?` callback: (param: [WebSocketParam](definition.md#websocketparam)) => void)  
+- `?` callback: (param: [WebSocketParam](../ts/interface.md#websocketparam)) => void)  
   关闭WebSocket请求后执行该回调函数。每关闭一个请求就会执行一次该函数。
 
 **返回值**

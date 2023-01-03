@@ -79,7 +79,7 @@ false
 
 **类型**
 
-[EventInfo](definition.md#eventinfo)[]
+[EventInfo](../ts/interface.md#eventinfo)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -109,7 +109,7 @@ false
 
 **类型**
 
-[CustomData](definition.md#customdata)[]
+[CustomData](../ts/interface.md#customdata)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 
@@ -124,7 +124,7 @@ false
 
 **类型**
 
-[AnimationClip](definition.md#animationclip)[]
+[AnimationClip](../ts/interface.md#animationclip)[]
 
 **可以通过事件/自定义数据/动态数据修改**
 

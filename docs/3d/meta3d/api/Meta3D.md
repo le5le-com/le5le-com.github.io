@@ -72,7 +72,7 @@ const meta3d = new Meta3D('meta3d-container');
 订阅指定的消息，当消息发送时执行回调函数。
 
 **参数**
-- name: [EmitName](./definition.md#emitname)  
+- name: [EmitName](../ts/type.md#emitname)
   需要订阅的消息名称。
 - callback: (params?: any) => void  
   回调函数，发布消息时执行该函数。params为消息附加的参数，不同消息参数不同。
@@ -94,7 +94,7 @@ meta3d.on('open', (params) => {
 解除订阅指定的消息。
 
 **参数**
-- name: [EmitName](./definition.md#emitname)  
+- name: [EmitName](../ts/type.md#emitname)  
   需要解除订阅的消息名称。
 - `?` callback: (params?: any) => void  
   可选。传入需要解除的回调函数，必须与订阅时的函数为同一引用（类似window.addEventListener和window.removeEventListener）。如果不传，表示解除该消息下的所有回调函数。
@@ -122,7 +122,7 @@ meta3d.off('open', open);
 发布消息，已订阅该消息的回调函数将被执行。
 
 **参数**
-- name: [EmitName](./definition.md#emitname)  
+- name: [EmitName](../ts/type.md#emitname)  
   消息名称。
 - `?` params: any  
   发布消息时附带的参数。不同消息参数不同。
@@ -147,7 +147,7 @@ meta3d.emit('open');
 
 **返回值**
 
-[Meta3DData](definition.md#meta3ddata)
+[Meta3DData](../ts/interface.md#meta3ddata)
 
 **示例**
 ```ts
@@ -160,7 +160,7 @@ const data = meta3d.data();
 更改项目的配置数据
 
 **参数**
-- options: Partial<[Meta3DOptions](definition.md#meta3doptions)>  
+- options: Partial<[Meta3DOptions](../ts/interface.md#meta3doptions)>  
   需要更改的配置对象。
 
 **返回值**
@@ -183,7 +183,7 @@ meta3d.setOptions({ running: true });
 
 **返回值**
 
-[Meta3DOptions](definition.md#meta3doptions)
+[Meta3DOptions](../ts/interface.md#meta3doptions)
 
 **示例**
 ```ts
@@ -196,9 +196,9 @@ const options = meta3d.getOptions();
 **`Promise`** 打开项目数据。
 
 **参数**
-- `?` data: string | Partial<[Meta3DData](./definition.md#meta3ddata)>  
+- `?` data: string | Partial<[Meta3DData](../ts/interface.md#meta3ddata)>  
   需要被解析的项目数据。可以是json字符串或者对象。如果不传表示打开空白项目。
-- `?` onProgress: (name: [OpenProgressType](definition.md#openprogresstype), info: OpenProgressInfo) => void  
+- `?` onProgress: (name: [OpenProgressType](../ts/type.md#openprogresstype), info: OpenProgressInfo) => void  
   项目解析进度回调函数，有两个参数，第一个参数name表示当前的进度名称，第二个参数表示具体的进度状态。
 
 **返回值**
@@ -218,7 +218,7 @@ meta3d.open({}, () => {
 打开场景数据。
 
 **参数**
-- `?` data: string | [SceneData](definition.md#scenedata)  
+- `?` data: string | [SceneData](../ts/interface.md#scenedata)  
   需要解析的场景数据。可以是json字符串或者对象。如果不传表示打开空白场景。
 - `?` onProgress: (current: number, total: number) => void  
   场景解析进度回调函数，有两个参数，第一个参数current表示正在被解析的node数据索引，第二个参数total表示一共需要被解析的node数量。
@@ -330,7 +330,7 @@ meta3d.showLoading();
 更新加载进度条的信息。
 
 **参数**
-- option: [LoadingUpdateOption](definition.md#loadingupdateoption)  
+- option: [LoadingUpdateOption](../ts/interface.md#loadingupdateoption)  
   更新数据的相关配置。
 
 **返回值**
@@ -348,7 +348,7 @@ meta3d.updateLoading({ percenet: 50, text: '进度50%' });
 隐藏内置的加载进度条DOM。
 
 **参数**
-- `?` option: [LoadingHideOption](definition.md#loadinghideoption)  
+- `?` option: [LoadingHideOption](../ts/interface.md#loadinghideoption)  
   相关配置。
 
 **返回值**
@@ -366,7 +366,7 @@ meta3d.hideLoading();
 显示内置的加载角标DOM。
 
 **参数**
-- `?` position: [LoadingPosition](definition.md#loadingposition)  
+- `?` position: [LoadingPosition](../ts/interface.md#loadingposition)  
   加载角标的显示位置。不传默认为右上角。
 
 **返回值**
