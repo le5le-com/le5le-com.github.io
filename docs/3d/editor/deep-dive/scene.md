@@ -54,7 +54,7 @@ string
 
 **类型**
 
-[GridUnit](../../meta3d/api/definition.md#gridunit)
+[GridUnit](../../meta3d/ts/type.md.md#gridunit)
 
 **默认值**
 
