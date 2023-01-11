@@ -6,7 +6,19 @@
 
 ### 1.1 乐吾乐2D可视化组态软件 1.0版     
 
-企业版demo：https://t.le5le.com/       
+2d可视化企业版demo：https://t.le5le.com/       
+
+![乐吾乐2D可视化组态软件功能及价格](/img/2d.png)     
+
+
+![乐吾乐3D可视化组态软件功能及价格](/img/3d.png)     
+
+
+![乐吾乐平台服务价格](/img/fw.png)    
+
+
+
+
 
  
 | 功能及规格       | vue /angular<br /> 源码版（前端）   | vue /angular<br /> 源码版（前后端） | 安装包版                    |
