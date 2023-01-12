@@ -202,6 +202,7 @@ const line = {
 ```
 
 **补充**
+
 meta2d的anchors内置twoWay属性，配置说明如下。 
 
 ```js
