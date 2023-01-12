@@ -4,6 +4,12 @@
 
 注意：le5le charts对echarts格式数据做了兼容性处理（仅提取一些有效数据）。
 
+注册：
+```ts
+import { chartsPens } from '@meta2d/le5le-charts';
+meta2d.registerCanvasDraw(chartsPens());
+```
+
 ## lineChart 折线图
 
 - **数据**
