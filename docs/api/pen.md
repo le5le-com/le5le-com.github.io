@@ -201,6 +201,29 @@ const line = {
 };
 ```
 
+**补充**
+
+meta2d的anchors内置twoWay属性，配置说明如下。 
+
+```js
+//注意在禁用锚点的场景下使用才有效
+meta2d.store.options.autoAnchor = false;
+
+enum TwoWay {
+  Default,
+  In,  //1 只允许进
+  Out, //2 只允许出
+  DisableConnected, //3 禁止被连接
+  DisableConnectTo, //4 禁止连线锚点连接其他锚点
+  Disable = 10, //禁用
+}
+
+//使用
+ //禁止节点第一个锚点被连接
+ pen.anchors[0].twoWay = TwoWay.DisableConnected;
+ pen.calculative.worldAnchors[0].twoWay = TwoWay.DisableConnected;
+```
+
 ### x,y,width,height
 
 pen 在画布中的位置。**【注意】** 此位置仅为画布绘画的参考位置，缩放平移时，可能会变化，如果需要获取缩放平移时坐标不变的逻辑位置，用 meta2d.getPenRect(pen)获取。

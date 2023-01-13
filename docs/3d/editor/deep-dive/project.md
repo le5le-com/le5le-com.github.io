@@ -60,7 +60,7 @@ string
 
 **类型**
 
-[GizmoType](../../meta3d/api/ition.md#GridUnit)
+[GizmoType](../../meta3d/ts/type.md#GridUnit)
 
 **默认值**
 

@@ -2,7 +2,7 @@
 
 通用的属性对所有[TargetType](../ts/enum.md)都有效。
 
-想要获取目标的某个属性值，必须调用目标所在的场景管理器实例的[getValue](SceneManager.md#getvalue)方法：
+想要获取目标的某个属性值，必须调用目标所在的场景管理器实例的[getValue](../api/SceneManager.md#getvalue)方法：
 ```ts
 // 获取JSON格式的属性值
 const value = sceneManager.getValue(target, property);
@@ -11,7 +11,7 @@ const value = sceneManager.getValue(target, property);
 const value = sceneManager.getValue(target, property, true);
 ```
 
-想要设置目标的某个属性值，必须调用目标所在的场景管理器实例的[setValue](SceneManager.md#setvalue)方法：
+想要设置目标的某个属性值，必须调用目标所在的场景管理器实例的[setValue](../api/SceneManager.md#setvalue)方法：
 ```ts
 // 设置简单属性的值
 sceneManager.setValue({ target, properties: { name: 'xxx' } });
