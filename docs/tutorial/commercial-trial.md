@@ -4,3 +4,8 @@
 
 下载地址：  
 https://gitee.com/le5le/downloads
+
+部署安装教程：
+https://www.bilibili.com/video/BV1r84y1h7GN/?spm_id_from=333.999.0.0
+
+
