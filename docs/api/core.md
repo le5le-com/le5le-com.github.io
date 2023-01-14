@@ -1326,8 +1326,8 @@ meta2d.closeMqtt();
   新版本以后，新增dataId 方式修改绑定变量的值,详见下方示例。
   新版本以后，当data.id为图纸id(meta2d.store.data.id)的时候,该方法表示修改meta2d.store.data属性
 - { render: boolean = true, 
-    history: boolean = true,
-    doEvent: boolean = false}  
+    doEvent: boolean = true,
+    history: boolean }  
   命名参数，参照下方示例  
   1. render:更改数据后是否重新渲染画布  
   默认会重新渲染，但若在 for 循环中使用 setValue 可能带来性能问题，推荐将值设置成 false ，当 for 循环执行完毕后，使用 meta2d.render()
