@@ -407,7 +407,7 @@ user （自行维护）
 
 #### msql
 
-表结构和示例数据参考： [https://gitee.com/le5le/downloads/tree/master/db](https://gitee.com/le5le/downloads/tree/master/db)  中的topology.sql
+表结构和示例数据参考： [https://gitee.com/le5le/downloads/blob/main/tools/db](https://gitee.com/le5le/downloads/blob/main/tools/db)中的topology.sql
 ​
 
 # 后端模块
