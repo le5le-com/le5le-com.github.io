@@ -4,7 +4,7 @@
 格式有三种：原生代码（JS）、阿里字体（iconfont）、图片（svg、gif），企业版已经写好固定的逻辑，支持良好。
 ​
 
-点击查看：[http://t.le5le.com/](http://t.le5le.com/)    
+点击查看：[https://2ds.le5le.com/](https://2ds.le5le.com/)    
 
 支持搜索关键词找到具体图元，例如“泵”
 
@@ -113,6 +113,7 @@
 
 
 
-开始设计： http://t.le5le.com/
+开始设计：https://2d.le5le.com/    
+
 
 解决方案：https://2ds.le5le.com/search
