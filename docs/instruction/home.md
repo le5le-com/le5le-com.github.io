@@ -1,6 +1,7 @@
 # 用户使用手册
 
-开始设计： https://t.le5le.com/
+开始设计： https://2d.le5le.com/     
+
 
 
 ## 1 基本知识
@@ -597,9 +598,6 @@ video标签支持MP4、WebM、Ogg 三种格式
 
 
 
-开始设计： https://t.le5le.com/   
-
-快捷键：https://developer.le5le.com/tutorial/keyboards.html   
-
-解决方案：https://2ds.le5le.com/search   
+开始设计：https://2d.le5le.com/   
+解决方案：https://2ds.le5le.com/search      
    

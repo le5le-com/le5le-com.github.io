@@ -1,9 +1,9 @@
 
 ## 1 产品价格清单
  
-2d可视化企业版demo：https://t.le5le.com/  
+2d可视化企业版demo：https://2d.le5le.com/      
 
-
+ 
 ![乐吾乐2D可视化组态软件功能及价格](/img/2d.png)     
 
 
