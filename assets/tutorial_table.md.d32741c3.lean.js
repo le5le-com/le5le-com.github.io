@@ -1,1 +1,0 @@
-import{_ as n,c as s,o as a,a as t}from"./app.8cdd52a3.js";const b='{"title":"\u8868\u683C","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/table.md"}',p={},o=t("",17),c=[o];function e(u,l,k,r,i,d){return a(),s("div",null,c)}var g=n(p,[["render",e]]);export{b as __pageData,g as default};

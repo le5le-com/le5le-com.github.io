@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.8cdd52a3.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"3d/meta3d/api/EventManager.md"}',r={};function o(n,c,s,d,p,_){return a(),t("div")}var l=e(r,[["render",o]]);export{f as __pageData,l as default};
