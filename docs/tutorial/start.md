@@ -69,7 +69,7 @@ npm install meta2d.js --save
   </head>
 
   <body>
-    <div id="meta2d"></div>
+    <div id="meta2d" style="height:100vh;width:100vw;"></div>
     <script src="meta2d.js"></script>
     <script src="index.js"></script>
   </body>
