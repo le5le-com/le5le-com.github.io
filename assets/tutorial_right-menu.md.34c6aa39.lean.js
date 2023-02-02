@@ -1,1 +1,0 @@
-import{_ as n,c as a,o as s,a as t}from"./app.488804e2.js";const h='{"title":"\u53F3\u952E\u83DC\u5355","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/right-menu.md"}',p={},o=t("",5),e=[o];function c(u,i,l,r,k,d){return s(),a("div",null,e)}var m=n(p,[["render",c]]);export{h as __pageData,m as default};
