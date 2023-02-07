@@ -981,6 +981,9 @@ meta2d.uncombine(pen);
 
 - pens: Pen[]  
   画笔数组
+  
+- emit: boolean
+  是否发送消息，默认true
 
 **返回：**  
 void。高亮画笔为 meta2d.store.active
