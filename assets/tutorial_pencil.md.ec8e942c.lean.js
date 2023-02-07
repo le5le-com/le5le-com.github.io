@@ -1,1 +1,0 @@
-import{_ as n,c as a,o as t,a as s}from"./app.7d21f96c.js";var e="/img/pencil.png";const h='{"title":"\u94C5\u7B14","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/pencil.md"}',p={},o=s("",6),c=[o];function r(i,l,_,u,d,m){return t(),a("div",null,c)}var f=n(p,[["render",r]]);export{h as __pageData,f as default};
