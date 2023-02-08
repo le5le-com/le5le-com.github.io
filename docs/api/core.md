@@ -981,6 +981,9 @@ meta2d.uncombine(pen);
 
 - pens: Pen[]  
   画笔数组
+  
+- emit: boolean
+  是否发送消息，默认true
 
 **返回：**  
 void。高亮画笔为 meta2d.store.active
@@ -1633,7 +1636,7 @@ var rect = meta2d.getRect();
   true，完整展示整个图纸；false，短边展示图纸，长边会被截取显示不完整
 
 - viewPadding: Padding（number）  
-   图片留白边距。默认 10
+   图纸留白边距。默认 10
 
 **返回：**  
 void

@@ -53,16 +53,16 @@ module.exports = {
         items: [
           {
             text: '乐吾乐 2D可视化',
-            link: 'https://2ds.le5le.com/',
+            link: 'https://2d.le5le.com/',
           },
           {
             text: '乐吾乐 3D 预览版',
-            link: 'http://111.172.231.243:7800/',
+            link: 'https://3d.le5le.com/',
           },
-          {
-            text: '乐吾乐 物联平台',
-            link: 'http://iot.demo.le5le.com/',
-          },
+          // {
+          //   text: '乐吾乐 物联平台',
+          //   link: 'http://iot.demo.le5le.com/',
+          // },
         ],
       },
       {
