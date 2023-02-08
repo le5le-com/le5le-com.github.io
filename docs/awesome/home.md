@@ -16,7 +16,7 @@
 
 ②  [乐吾乐可视化引擎meta2d快速上手](https://www.bilibili.com/video/BV1od4y1Y7Dd/?spm_id_from=333.999.0.0)      
 
-③  [乐吾乐2D可视化部署安装教程](https://www.bilibili.com/video/BV1r84y1h7GN/?spm_id_from=333.999.0.0)      
+③  [乐吾乐2D可视化部署安装教程](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)      
 
 ④  [用户教程01-用连线绘制管道效果](https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0)   
 
