@@ -1317,6 +1317,38 @@ void
 meta2d.closeMqtt();
 ```
 
+### connectHttp
+
+连接 http。 
+
+**参数：**  
+无
+
+**返回：**  
+void
+
+**示例：**
+
+```js
+//const { http, httpTimeInterval, httpHeaders } = meta2d.store.data 可获取http配置
+meta2d.connectHttp();
+```
+
+### closeHttp
+
+关闭 http 连接
+
+**参数：**  
+无
+
+**返回：**  
+void
+
+**示例：**
+
+```js
+meta2d.closeHttp();
+```
 ### setValue
 
 修改 [Pen](./pen) 属性值, 触发对应画笔们的值变化事件。（若想要不触发值变化事件使用 _setValue）
