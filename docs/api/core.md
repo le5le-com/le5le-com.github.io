@@ -1610,6 +1610,9 @@ meta2d.pushChildren(ctx, pen);
 - callback: (blob: Blob ) => void
   回调函数。默认不传，返回给当前函数的返回值；否则返回给回调函数的 blob 参数
 
+- containBkImg:boolean = false
+  生成png图像时，是否考虑背景图片
+
 **返回：**  
 当 callback 为空时，返回 blob。
 
@@ -1617,6 +1620,8 @@ meta2d.pushChildren(ctx, pen);
 
 ```js
 var blob = meta2d.toPng();
+
+var blob1 = meta2d.toPng(10,undefined,true);
 ```
 
 ### downloadPng

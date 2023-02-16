@@ -187,6 +187,10 @@ function getTutorialSidebar() {
           link: '/tutorial/commercial-api',
         },
         {
+          text: 'API接口文档（新）',
+          link: '/tutorial/commercial-api-new',
+        },
+        {
           text: '部署试用',
           link: '/tutorial/commercial-trial',
         },
