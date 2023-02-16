@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as t}from"./app.de9038fc.js";const m='{"title":"API\u63A5\u53E3\u6587\u6863","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial/commercial-api.md"}',o={},p=t("",64),e=[p];function c(r,u,l,k,i,q){return a(),s("div",null,e)}var g=n(o,[["render",c]]);export{m as __pageData,g as default};
