@@ -33,6 +33,9 @@ Authorization -  自动读取cookie为token的值给Authorization，可用于登
 
 #### [POST] /api/data/${collection}/list 获取图纸/自定义组件列表
 
+- collection 为le5le表示图纸，le5le2d-components表示自定义组件
+
+
 **body**
 - projection:{} 过滤字段，设置为1，表示请求该字段。
 
@@ -194,6 +197,9 @@ Authorization -  自动读取cookie为token的值给Authorization，可用于登
   同add
 
 #### [POST] /api/data/${collection}/delete 删除图纸/自定义组件
+
+- collection 为le5le表示图纸，le5le2d-components表示自定义组件
+
 
 **body**
 - id:string 图纸/自定义组件id
