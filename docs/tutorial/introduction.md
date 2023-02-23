@@ -5,7 +5,7 @@
 <div style="display:flex; justify-content:">
 <img style="height:150px; margin: 10px" src="/img/feishuichuli.png" >
 
-<img style="height:150px; margin: 10px" src="/img/2.gif" >
+<img style="height:150px; margin: 10px" src="/img/rehuanzhan(2).gif" >
 
 <img style="height:150px; margin: 10px" src="/img/3.gif" >  
 </div>
@@ -105,46 +105,46 @@
 
 ## License
 
-meta2d.js © le5le.com
+© le5le.com
 
 <br>
 
 ## 行业案例
 
-**1.物联网**
+**1.智能预制泵站**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/wulianwang3.gif" >
+<img style="height:400px; margin: 10px" src="/img/bengzhan.gif" >
 </div>
 
-**2.工业物联网**
+**2.冷源群控制系统**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/iot.png" >
+<img style="height:400px; margin: 10px" src="/img/lengyuanqun.gif" >
 </div>
 
-**3.智慧水务**
+**3.废水处理**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/feishuichuli.png" >
+<img style="height:400px; margin: 10px" src="/img/feishuichulixijie.gif" >
 </div>
 
-**4.数字孪生**
+**4.电信机房**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/shuziluansheng.gif" >
+<img style="height:400px; margin: 10px" src="/img/jifang.png" >
 </div>
 
 **5.电力能源**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/dianli.gif" >
+<img style="height:400px; margin: 10px" src="/img/zhujiexiantu.gif" >
 </div>
 
-**6.智能楼宇**
+**6.热换站远程监控系统**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/rehuanzhan.gif" >
+<img style="height:400px; margin: 10px" src="/img/rehuanzhan(2).gif" >
 </div>
 
 **7.智慧城市**
@@ -159,23 +159,24 @@ meta2d.js © le5le.com
 <img style="height:400px; margin: 10px" src="/img/zhihuijiaotong.png" >
 </div>
 
-**9.智慧农业**
+**9.大屏展示**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/zhihuinongye.png" >
+<img style="height:400px; margin: 10px" src="/img/dapinglouyu.png" >
 </div>
 
-**10.智慧大屏**
+**10.思维导图**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/zhihuidaping.png" >
+<img style="height:400px; margin: 10px" src="/img/siweidaotu03.jpg" >
 </div>
 
-**11.思维导图**
+**11.自定义图形库**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/siweidaotu.jpg" >
+<img style="height:400px; margin: 10px" src="/img/2.5Dkeji.jpg" >
 </div>
+
 
 <br>
 
