@@ -49,14 +49,14 @@
 
 由于老版后端接口保持不变，因此需要将部分代码替换回去（如果是自己二开实现后端接口，并且接口地址不包含topology，请忽略这个步骤）
  <br/>
-如下图所示，替换框选部分：
+<div>如下图所示，<p style="color:#fa541c;display:inline-block">替换框选部分</p>：</div>
 
 ![后台接口更改](../public/img/apinochange.jpg)
 ![后台接口更改](../public/img/apinochange2.jpg) 
 ![后台接口更改](../public/img/foldernochange.jpg)
  <br/>
 
-4. 更改核心库版本
+1. 更改核心库版本
 
 ![核心库版本更改](../public/img/version_change.jpg)
 
