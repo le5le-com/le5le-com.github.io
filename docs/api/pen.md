@@ -2397,6 +2397,10 @@ getParent(pen);
 - pen: Pen  
   画笔
 
+- store: Meta2dStore
+  绘画数据
+
+  
 **返回：**  
 Pen[]。如果没有子元素或孙元素，返回 []
 
@@ -2405,7 +2409,7 @@ Pen[]。如果没有子元素或孙元素，返回 []
 ```js
 import { getAllChildren } from "@meta2d/core";
 
-getAllChildren(pen);
+getAllChildren(pen,meta2d.store);
 ```
 
 ### calcPenRect
