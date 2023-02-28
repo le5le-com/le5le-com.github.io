@@ -16,26 +16,29 @@
 
 ②  [乐吾乐可视化引擎meta2d快速上手](https://www.bilibili.com/video/BV1od4y1Y7Dd/?spm_id_from=333.999.0.0)      
 
-③  [乐吾乐2D可视化部署安装教程](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)      
+③  [乐吾乐2D可视化部署安装教程](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)  
 
-④  [用户教程01-用连线绘制管道效果](https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0)   
+④  [实时数据显示](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)     
 
-⑤  [用户教程02-水位随数据动态变化](https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0)   
+⑤  [双向数据通信](https://www.bilibili.com/video/BV1C24y1m7GY/?spm_id_from=333.999.0.0)    
 
-⑥  [用户教程03-处理多个topic](https://www.bilibili.com/video/BV1Te411c7oU/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)   
+⑥  [用户教程01-用连线绘制管道效果](https://www.bilibili.com/video/BV1VM41167jR/?spm_id_from=333.999.0.0)   
 
-⑦  [用户教程04-弹框显示](https://www.bilibili.com/video/BV1fW4y1N7pH/?spm_id_from=333.999.0.0)       
+⑦  [用户教程02-水位随数据动态变化](https://www.bilibili.com/video/BV1AV4y1w7BL/?spm_id_from=333.999.0.0)   
 
+⑧  [用户教程03-处理多个topic](https://www.bilibili.com/video/BV1Te411c7oU/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)   
 
-⑧  [用户教程05-脏数据处理](https://www.bilibili.com/video/BV1p44y1o7T5/?spm_id_from=333.999.0.0)    
+⑨  [用户教程04-弹框显示](https://www.bilibili.com/video/BV1fW4y1N7pH/?spm_id_from=333.999.0.0)       
 
-⑨  [用户教程06-条件告警](https://www.bilibili.com/video/BV1z8411H7hA/?spm_id_from=333.999.0.0)    
+⑩  [用户教程05-脏数据处理](https://www.bilibili.com/video/BV1p44y1o7T5/?spm_id_from=333.999.0.0)    
 
-⑩  [用户教程07-自定义动画](https://www.bilibili.com/video/BV1944y1o7u3/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)    
+⑪  [用户教程06-条件告警](https://www.bilibili.com/video/BV1z8411H7hA/?spm_id_from=333.999.0.0)    
 
-⑪  [用户教程08-组合状态](https://www.bilibili.com/video/BV1RG4y127Bm/)    
+⑫  [用户教程07-自定义动画](https://www.bilibili.com/video/BV1944y1o7u3/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)    
 
-⑫  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
+⑬  [用户教程08-组合状态](https://www.bilibili.com/video/BV1RG4y127Bm/)    
+
+⑭  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
 
 
 
