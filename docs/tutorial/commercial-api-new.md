@@ -39,7 +39,7 @@ Authorization -  自动读取cookie为token的值给Authorization，可用于登
 **body**
 - projection:{} 过滤字段，设置为1，表示请求该字段。
 
-**quary**
+**query**
 查询条件
 - folder:string 文件夹名
   

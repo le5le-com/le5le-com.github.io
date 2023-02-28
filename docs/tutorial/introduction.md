@@ -5,7 +5,7 @@
 <div style="display:flex; justify-content:">
 <img style="height:150px; margin: 10px" src="/img/feishuichuli.png" >
 
-<img style="height:150px; margin: 10px" src="/img/rehuanzhan (2).gif" >
+<img style="height:150px; margin: 10px" src="/img/rehuanzhan(2).gif" >
 
 <img style="height:150px; margin: 10px" src="/img/3.gif" >  
 </div>
@@ -122,7 +122,7 @@
 **6.热换站远程监控系统**
 
 <div style="display:flex; justify-content:">
-<img style="height:400px; margin: 10px" src="/img/rehuanzhan (2).gif" >
+<img style="height:400px; margin: 10px" src="/img/rehuanzhan(2).gif" >
 </div>
 
 **7.智慧城市**
