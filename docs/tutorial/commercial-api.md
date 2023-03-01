@@ -405,9 +405,9 @@ user （自行维护）
 一般直接前端传什么，后端保存什么即可。
 ​
 
-#### msql
+#### mysql
 
-表结构和示例数据参考： [https://gitee.com/le5le/downloads/blob/main/tools/db](https://gitee.com/le5le/downloads/blob/main/tools/db)中的topology.sql
+表结构和示例数据参考： [https://gitee.com/le5le/downloads/blob/master/tools/db](https://gitee.com/le5le/downloads/blob/master/tools/db)中的le5le2d.sql
 ​
 
 # 后端模块
