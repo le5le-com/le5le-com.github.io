@@ -249,7 +249,7 @@ function getTutorialSidebar() {
         { text: '自定义图形库', link: '/tutorial/make-component' },
         { text: '自定义连线算法', link: '/tutorial/line-ai' },
         {
-          text: '企业图形库',
+          text: '基本图形库',
           children: [
             { text: '表单', link: '/tutorial/forms' },
             { text: '表格', link: '/tutorial/table' },
