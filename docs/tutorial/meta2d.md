@@ -127,6 +127,7 @@ onTouchstart = (e) => {
 |mouseRightActive | boolean| 是否允许右键选中节点，默认true允许 |
 |disableClipboard | boolean| 是否禁止系统剪切板，默认false不禁止 |
 |drawingLineLength | number| 画线过程中允许的最大长度，为0表示不限 |
+|disableTouchPadScale | number| 是否禁止触控板双指缩放，默认false |
 
 ### 默认值
 ```ts
