@@ -36,9 +36,11 @@
 
 ⑫  [用户教程07-自定义动画](https://www.bilibili.com/video/BV1944y1o7u3/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)    
 
-⑬  [用户教程08-组合状态](https://www.bilibili.com/video/BV1RG4y127Bm/)    
+⑬  [用户教程08-组合状态](https://www.bilibili.com/video/BV1RG4y127Bm/)  
 
-⑭  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
+⑭  [自定义图形库](https://www.bilibili.com/video/BV1kN411c74P/?spm_id_from=333.999.0.0)       
+
+⑮  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
 
 
 
