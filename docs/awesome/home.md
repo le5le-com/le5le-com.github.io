@@ -18,7 +18,7 @@
 
 ③  [乐吾乐2D可视化部署安装教程](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)  
 
-④  [实时数据显示](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)     
+④  [实时数据显示](https://www.bilibili.com/video/BV1DW4y1K76g/?spm_id_from=333.999.0.0)     
 
 ⑤  [双向数据通信](https://www.bilibili.com/video/BV1C24y1m7GY/?spm_id_from=333.999.0.0)    
 
