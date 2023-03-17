@@ -246,6 +246,18 @@ const pen = {x: 0, y: 0, width: 100, height: 100, ...};
 meta2d.getPenRect(pen)
 ```
 
+### radio 锁定宽高比
+
+是否等比缩放图元。
+
+**数据类型：** boolean
+
+**示例：**
+
+```js
+const pen = {radio: true, ...};
+```
+
 ### rotate
 
 pen 的旋转角度，单位度 °。
