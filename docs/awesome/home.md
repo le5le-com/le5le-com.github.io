@@ -18,7 +18,7 @@
 
 ③  [乐吾乐2D可视化部署安装教程](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)  
 
-④  [实时数据显示](https://www.bilibili.com/video/BV1k84y1G75x/?spm_id_from=333.999.0.0)     
+④  [实时数据显示](https://www.bilibili.com/video/BV1DW4y1K76g/?spm_id_from=333.999.0.0)     
 
 ⑤  [双向数据通信](https://www.bilibili.com/video/BV1C24y1m7GY/?spm_id_from=333.999.0.0)    
 
@@ -36,9 +36,11 @@
 
 ⑫  [用户教程07-自定义动画](https://www.bilibili.com/video/BV1944y1o7u3/?spm_id_from=333.999.0.0&vd_source=28d7954182229a8fb83df5f4b07265c7)    
 
-⑬  [用户教程08-组合状态](https://www.bilibili.com/video/BV1RG4y127Bm/)    
+⑬  [用户教程08-组合状态](https://www.bilibili.com/video/BV1RG4y127Bm/)  
 
-⑭  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
+⑭  [自定义图形库](https://www.bilibili.com/video/BV1oX4y1U7f4/?spm_id_from=333.999.0.0)       
+
+⑮  [炫酷组件，自己定义](https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q)    
 
 
 

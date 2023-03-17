@@ -1,6 +1,8 @@
 # 自定义图形库
 
-::: tip     
+::: tip    
+ 视频教程 [自定义图形库] (https://www.bilibili.com/video/BV1oX4y1U7f4/?spm_id_from=333.999.0.0)         
+
 【炫酷组件，自己定义】：https://mp.weixin.qq.com/s/qNGV0YeYIdWmyVJkbAHS_Q
 :::
 
