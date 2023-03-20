@@ -695,6 +695,90 @@ meta2d.setValue(pen);
 meta2d.inactive();
 ```
 
+
+### gradientColors
+
+背景渐变色(1.0.5以后)
+
+**数据类型：** string
+
+**示例：**
+
+```js
+const pen = {
+  name: "rectangle", // name 为上面表格中name
+  text: "矩形",
+  x: 100,
+  y: 100,
+  width: 100,
+  height: 100,
+};
+meta2d.addPen(pen);
+
+const _pen = {
+  bkType: 1,
+  gradientColors:"linear-gradient(90deg,rgba(0, 115, 230, 1) 0%,rgb(20, 51, 204) 12%,rgb(89, 200, 255) 80%,rgb(46, 165, 255) 100%)",
+};
+_pen.id = pen.id;
+meta2d.setValue(_pen);
+meta2d.inactive();
+```
+
+### lineGradientColors
+
+线渐变色(1.0.5以后)
+
+**数据类型：** string
+
+**示例：**
+
+```js
+//非连线类型
+const pen = {
+  name: "rectangle", // name 为上面表格中name
+  text: "矩形",
+  x: 100,
+  y: 100,
+  width: 100,
+  height: 100,
+};
+meta2d.addPen(pen);
+
+const _pen = {
+  strokeType: 1,
+  lineGradientColors:"linear-gradient(90deg,rgba(0, 115, 230, 1) 0%,rgb(20, 51, 204) 12%,rgb(89, 200, 255) 80%,rgb(46, 165, 255) 100%)",
+  lineWidth:20
+};
+_pen.id = pen.id;
+meta2d.setValue(_pen);
+meta2d.inactive();
+
+
+//连线类型
+//此时渐进角度设置无效，默认按照连线切线渐进
+const line = {
+  type: 1,
+  name: 'line',
+  lineName:'curve',
+  anchors: [{x:0.1, y:0.1},  {x:0.1, y:0.5}, {x:1, y:1}],
+  x: 100,
+  y: 100,
+  width: 100,
+  height: 100,
+};
+
+const pen = {
+  strokeType: 1,
+  lineGradientColors:"linear-gradient(90deg,rgba(0, 115, 230, 1) 0%,rgb(20, 51, 204) 12%,rgb(89, 200, 255) 80%,rgb(46, 165, 255) 100%)",
+  lineWidth:20
+};
+
+meta2d.addPen(line);
+pen.id = line.id;
+meta2d.setValue(pen);
+meta2d.inactive();
+```
+
 ### lineCap
 
 线两端的形状：round - 圆形；butt - 平直；square - 正方形。
