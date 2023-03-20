@@ -481,10 +481,7 @@ video标签支持MP4、WebM、Ogg 三种格式
 格式有三种：原生代码（JS）、阿里字体（iconfont）、图片（svg、gif），企业版已经写好固定的逻辑，支持良好。    
 同时【乐吾乐2D可视化组态软件】支持扩展自定义图库：https://developer.le5le.com/tutorial/make-component.html  
 
-
-![乐吾乐2D可视化  新增组件](/img/xinzengzujian.png)
-​
-点击查看系统组件：[http://t.le5le.com/](http://t.le5le.com/)
+点击查看系统组件：[http://2d.le5le.com/](http://t.le5le.com/)
 
 ![乐吾乐2D可视化  图形库](/img/tuxingku.png)
 
