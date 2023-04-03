@@ -131,9 +131,9 @@ meta2d<span class="token punctuation">.</span><span class="token function">getPe
   DisableEdit<span class="token punctuation">,</span>
   <span class="token comment">// 2 - \u7981\u6B62\u7F16\u8F91 + \u79FB\u52A8\uFF1B\u53EF\u9009\u4E2D\u3001\u9AD8\u4EAE\u3001\u89E6\u53D1\u4E8B\u4EF6\u7B49</span>
   DisableMove<span class="token punctuation">,</span>
-  <span class="token comment">// 3 - \u7981\u6B62\u7F29\u653E\uFF081.2.14\u7248\u672C\u4EE5\u540E\uFF09</span>
+  <span class="token comment">// 3 - \u7981\u6B62\u7F29\u653E\uFF08\u65B0\u7248\u672C\u4EE5\u540E\uFF09</span>
   DisableScale<span class="token punctuation">,</span> 
-  <span class="token comment">// 4 - \u7981\u6B62\u79FB\u52A8\u548C\u7F29\u653E\uFF081.2.14\u7248\u672C\u4EE5\u540E\uFF09</span>
+  <span class="token comment">// 4 - \u7981\u6B62\u79FB\u52A8\u548C\u7F29\u653E\uFF08\u65B0\u7248\u672C\u4EE5\u540E\uFF09</span>
   DisableMoveScale<span class="token punctuation">,</span>
   <span class="token comment">// 10 - \u4E0D\u89E6\u53D1\u4EFB\u4F55\u64CD\u4F5C\u548C\u4E8B\u4EF6</span>
   Disable <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span>
