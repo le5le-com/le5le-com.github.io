@@ -296,9 +296,9 @@ enum LockState {
   DisableEdit,
   // 2 - 禁止编辑 + 移动；可选中、高亮、触发事件等
   DisableMove,
-  // 3 - 禁止缩放（1.2.14版本以后）
+  // 3 - 禁止缩放（新版本以后）
   DisableScale, 
-  // 4 - 禁止移动和缩放（1.2.14版本以后）
+  // 4 - 禁止移动和缩放（新版本以后）
   DisableMoveScale,
   // 10 - 不触发任何操作和事件
   Disable = 10,

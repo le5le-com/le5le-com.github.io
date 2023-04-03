@@ -1352,7 +1352,7 @@ meta2d.closeHttp();
 ### setValue
 
 修改 [Pen](./pen) 属性值, 触发对应画笔们的值变化事件。（若想要不触发值变化事件使用 _setValue）
-1.1.15 版本以后，如果如果存在data.id并且id等于画布id(meta2d.store.data.id),则表示修改画布的options属性。
+新版本以后，如果如果存在data.id并且id等于画布id(meta2d.store.data.id),则表示修改画布的options属性。
 
 **参数：**
 
@@ -2323,11 +2323,11 @@ meta2d.addAnchor(line,{x:200,y:300},-1); //末尾添加
 - toAnchor: [Point](./point.md)  
   被连接画笔的连接锚点，可选，默认距离from最近的锚点
 - render:[boolean]
-  是否触发重绘，默认是。（1.2.1版本以后)
+  是否触发重绘，默认是。（新版本以后)
 
 **返回：**  
 - line:[Pen](./pen)
-  两个画笔的连线，（1.2.1版本以后)
+  两个画笔的连线，（新版本以后)
 
 **示例：**
 
